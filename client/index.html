@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app="Main">
+<head>
+	<title>Expleris</title>
+	<meta name="viewport" content="width=device-width, intitial-scale=1.0">
+	<link href="css/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+</head>
+	<body ng-controller="mainCtrl">
+
+	<div ng-include src="'views/nav.html'"></div>
+
+	<h1>Welcome to Mordor, may you enjoy your journey.</h1>
+
+		{{ error }}
+
+		<input type="search" placeholder="Search product name" ng-model="productName" />
+
+		<ul>
+			<li ng-repeat="categoryObj in categories">
+				<input type="checkbox" ng-click="categoryChange(categoryObj.category)" /> {{ categoryObj.category }} 
+			</li>
+		</ul>
+
+		<table>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+			</tr>
+			<tr ng-repeat="product in products | filter:productName">
+				<td>{{product.name}}</td>
+				<td>{{product.description}}</td>
+			</tr>
+		</table>
+
+		<div ng-view>
+   		</div>
+
+   		<!-- Angular -->
+		<script type="text/javascript" src="angular/angular.js"></script>
+	    <script type="text/javascript" src="angular-route/angular-route.min.js"></script>
+	    <!-- Bootstrap -->
+	    <script src="css/node_modules/jquery/dist/jquery.js"></script>
+	    <script type="text/javascript" src="css/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+	    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	    <script type="text/javascript" src="js/app.js"></script>
+
+	</body>
+</html>
