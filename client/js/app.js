@@ -2,32 +2,32 @@
 		"use strict";
 
 		angular
-			.module("Main", [])
-			.controller("mainCtrl", mainCtrl);
-			
-		function mainCtrl($scope, $http){
+			.module("Main",
+					["Main.products","ngRoute"]
+		 	)
+			.run(function($rootScope){
+					$rootScope.cartProducts = {};
+			})
 
-			var getProducts = function(response){
-				$scope.products = response.data;
-			}	
-
-			var getCategories = function(response){
-				$scope.categories = response.data;
-			}
-
-			var getError = function(reason){
-				$scope.error = "Sorry, something went wrong with the data.";
-			}
-
-			$scope.categoryChange = function(category){
-
-			}
-			
-			$http.get("data/products.json")
-				 .then(getProducts, getError);
-
-			$http.get("data/categories.json")
-				 .then(getCategories, getError);
-		}
+			.config(function($routeProvider){
+        	$routeProvider
+        	        .when("/products", {
+                                templateUrl: "views/products.html",
+                                controller: "productsCtrl"
+                    })
+                    .when("/news", {
+                                templateUrl: "views/news.html",
+                                controller: "newsCtrl"
+                    })
+                    .when("/aboutUs", {
+                                templateUrl: "views/aboutUs.html",
+                                controller: "aboutUsCtrl"
+                    })
+                    .when("/contactUs", {
+                                templateUrl: "views/contactUs.html",
+                                controller: "contactUsCtrl"
+                    })
+                    .otherwise({ redirectTo: '/'});
+		})
 
 })();
