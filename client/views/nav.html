@@ -1,4 +1,4 @@
-<div class="navbar navbar-default navbar-static-top">
+<div class="navbar navbar-default navbar-static-top" ng-controller="headerCtrl">
 	<div class="container">
 		<a href="#" class="navbar-brand">LOGO</a>
 			<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
@@ -8,16 +8,16 @@
 			</button>
 			<div class="collapse navbar-collapse navHeaderCollapse">
 				<ul class="nav navbar-nav navbar-right">
-					<li class="active dropdown">
+					<li class="dropdown">
 						<a href="#products" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
 						<ul class="dropdown-menu">
 							<li><a href="#essentialOils">Essential Oils</a></li>
 							<li><a href="#vegetables">Vegetables</a></li>						
 						</ul>
 					</li>
-					<li><a href="#news">News</a></li>
-					<li><a href="#aboutUs">Abous Us</a></li>
-					<li><a href="#contactUs">Contact Us</a></li> 	
+					<li ng-class="{ active: isActive('/news')}"><a href="#news">News</a></li>
+					<li ng-class="{ active: isActive('/aboutUs')}"><a href="#aboutUs">Abous Us</a></li>
+					<li ng-class="{ active: isActive('/contactUs')}"><a href="#contactUs">Contact Us</a></li> 	
 				</ul>
 			</div>
 	</div>

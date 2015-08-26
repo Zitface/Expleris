@@ -3,12 +3,8 @@
 
 		angular
 			.module("Main",
-					["Main.products","ngRoute"]
+					["Main.products", "Main.news", "Main.header", "ngRoute"]
 		 	)
-			.run(function($rootScope){
-					$rootScope.cartProducts = {};
-			})
-
 			.config(function($routeProvider){
         	$routeProvider
         	        .when("/products", {
