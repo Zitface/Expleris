@@ -1,3 +1,4 @@
+
 [
 	{
 		"name": "Quinoa",
@@ -6,5 +7,26 @@
 	{
 		"name": "Kaffe",
 		"description": "Den er helt frisk"
+	},
+	{
+		"name": "Lars",
+		"description": "Den er helt frisk"
+	},
+	{
+		"name": "Per",
+		"description": "Den er helt frisk"
+	},
+	{
+		"name": "Hans",
+		"description": "Den er helt frisk"
+	},
+	{
+		"name": "Hans",
+		"description": "Den er helt frisk"
+	},
+	{
+		"name": "Hans",
+		"description": "Den er helt frisk"
 	}
+
 ]

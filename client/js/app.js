@@ -3,7 +3,7 @@
 
 		angular
 			.module("Main",
-					["Main.products", "Main.news", "Main.header", "ngRoute"]
+					["Main.home", "Main.products", "Main.news", "Main.header", "ngRoute"]
 		 	)
 			.config(function($routeProvider){
         	$routeProvider
@@ -23,7 +23,11 @@
                                 templateUrl: "views/contactUs.html",
                                 controller: "contactUsCtrl"
                     })
-                    .otherwise({ redirectTo: '/'});
+                    .when("/home", {
+                    			templateUrl: "views/home.html",
+                    			controller: "homeCtrl"
+                    })
+                    .otherwise({ redirectTo: '/home'});
 		})
 
 })();

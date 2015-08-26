@@ -1,23 +1,24 @@
-<p>Products</p>
-<h1>Welcome to Mordor, may you enjoy your journey.</h1>
+
+<h1>Products</h1>
 
 		{{ error }}
 
 		<input type="search" placeholder="Search product name" ng-model="productName" />
 
 		<ul>
-			<li ng-repeat="categoryObj in categories">
-				<input type="checkbox" ng-click="categoryChange(categoryObj.category)" /> {{ categoryObj.category }} 
+			<li ng-repeat="catObj in categories">
+				<input type="checkbox" ng-click="catChange(catObj.category)" /> {{ catObj.category }} 
 			</li>
 		</ul>
 
-		<table>
-			<tr>
-				<th>Name</th>
-				<th>Description</th>
-			</tr>
-			<tr ng-repeat="product in products | filter:productName">
-				<td>{{product.name}}</td>
-				<td>{{product.description}}</td>
-			</tr>
-		</table>
+		<p>Name</p>
+				<p>Description</p>
+
+		<div class="col-md-4" style="background-color: gray; margin-left: 10%;" ng-repeat="product in products | filter:productName">
+				
+		
+		
+	            <p>{{product.name}}</p>
+				<p>{{product.description}}</p>
+
+		</div>

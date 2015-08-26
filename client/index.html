@@ -4,8 +4,8 @@
 <head>
 	<title>Expleris</title>
 	<meta name="viewport" content="width=device-width, intitial-scale=1.0">
-	<link href="css/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<link href="css/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -14,8 +14,12 @@
 
 		<div ng-include src="'views/nav.html'"></div>
 
-			<div ng-view>
-   			</div>   		
+			<div class="container">
+
+				<div ng-view>
+	   			</div>   	
+
+			</div>
 
    		<div class="push"></div>
 
@@ -29,16 +33,17 @@
 	    <script type="text/javascript" src="angular-route/angular-route.min.js"></script>
 
 	    <!-- Bootstrap and jQuery -->
-	    <script src="css/node_modules/jquery/dist/jquery.js"></script>
-	    <script type="text/javascript" src="css/node_modules/bootstrap/dist/js/bootstrap.js"></script>
-	    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	    <script src="css/jquery/dist/jquery.js"></script>
+	    <script type="text/javascript" src="css/bootstrap/dist/js/bootstrap.js"></script>
+	    <script type="text/javascript" src="css/jquery/dist/jquery.min.js"></script>
 	    <script type="text/javascript" src="js/app.js"></script>
 
 	    <!-- Controllers -->
 	    <script type="text/javascript" src="js/ctrls/productsCtrl.js"></script>
 	    <script type="text/javascript" src="js/ctrls/newsCtrl.js"></script>
 	    <script type="text/javascript" src="js/ctrls/headerCtrl.js"></script>
-
+	    <script type="text/javascript" src="js/ctrls/homeCtrl.js"></script>
+	    
 	    <!-- Misc -->
 	    
 
