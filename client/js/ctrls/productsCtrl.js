@@ -7,7 +7,7 @@
 
 	function productsCtrl($scope, $http){
 
-		var getProducts = function(response){
+			var getProducts = function(response){
 				$scope.products = response.data;
 			}	
 
@@ -19,8 +19,23 @@
 				$scope.error = "Sorry, something went wrong with the data.";
 			}
 
-			$scope.categoryChange = function(category){
+			$scope.categoriesSelected = [];
+			$scope.catChange = function(category) {
+				var i = $scope.categoriesSelected.indexOf(category);
+					if(i > -1) {
+						$scope.categoriesSelected.splice(i, 1);
+					} else {
+						$scope.categoriesSelected.push(category);
+					}
+			}
 
+			$scope.catFilter = function(product){
+				if($scope.categoriesSelected.length > 0){
+					if($scope.categoriesSelected.indexOf(product.category) < 0){
+						return;
+					}
+				}
+				return product;
 			}
 
 			$http.get("data/products.json")

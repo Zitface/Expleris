@@ -2,31 +2,45 @@
 [
 	{
 		"name": "Quinoa",
-		"description": "This is a product from Venezuela"
+		"description": "This is a product from Venezuela",
+		"category": "Organic",
+		"img": "http://www.seedguides.info/quinoa/quinoa-seeds.jpg"
 	},
 	{
 		"name": "Kaffe",
-		"description": "Den er helt frisk"
+		"description": "Den er helt frisk",
+		"category": "Organic",
+		"img": "http://www.seedguides.info/quinoa/quinoa-seeds.jpg"
 	},
 	{
 		"name": "Lars",
-		"description": "Den er helt frisk"
+		"description": "Han er sgu sød",
+		"category": "Specialties",
+		"img": "http://fanatic.rs/wp-content/uploads/2015/07/chia.jpg"
 	},
 	{
 		"name": "Per",
-		"description": "Den er helt frisk"
+		"description": "Er postmand og har en kat",
+		"category": "Organic",
+		"img": "http://www.seedguides.info/quinoa/quinoa-seeds.jpg"
 	},
 	{
 		"name": "Hans",
-		"description": "Den er helt frisk"
+		"description": "Har en fed bondegaard",
+		"category": "Specialties",
+		"img": "http://fanatic.rs/wp-content/uploads/2015/07/chia.jpg"
 	},
 	{
-		"name": "Hans",
-		"description": "Den er helt frisk"
+		"name": "Sinatra",
+		"description": "Fornavnet er Frank",
+		"category": "Organic",
+		"img": "http://www.seedguides.info/quinoa/quinoa-seeds.jpg"
 	},
 	{
-		"name": "Hans",
-		"description": "Den er helt frisk"
+		"name": "Calvin",
+		"description": "Hvem sagde Klein?",
+		"category": "Specialties",
+		"img": "http://fanatic.rs/wp-content/uploads/2015/07/chia.jpg"
 	}
 
 ]
