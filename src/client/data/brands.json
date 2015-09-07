@@ -1,0 +1,53 @@
+
+[
+	{
+		"id": "1",
+		"name": "Quinoa",
+		"description": "This is a product from Venezuela",
+		"category": "Organic",
+		"img": "http://www.seedguides.info/quinoa/quinoa-seeds.jpg"
+	},
+	{
+		"id": "2",
+		"name": "Kaffe",
+		"description": "Den er helt frisk",
+		"category": "Organic",
+		"img": "http://www.seedguides.info/quinoa/quinoa-seeds.jpg"
+	},
+	{
+		"id": "3",
+		"name": "Lars",
+		"description": "Han er sgu sød",
+		"category": "Specialties",
+		"img": "http://fanatic.rs/wp-content/uploads/2015/07/chia.jpg"
+	},
+	{
+		"id": "4",
+		"name": "Per",
+		"description": "Er postmand og har en kat",
+		"category": "Organic",
+		"img": "http://www.seedguides.info/quinoa/quinoa-seeds.jpg"
+	},
+	{
+		"id": "5",
+		"name": "Hans",
+		"description": "Har en fed bondegaard",
+		"category": "Specialties",
+		"img": "http://fanatic.rs/wp-content/uploads/2015/07/chia.jpg"
+	},
+	{
+		"id": "6",
+		"name": "Sinatra",
+		"description": "Fornavnet er Frank",
+		"category": "Organic",
+		"img": "http://www.seedguides.info/quinoa/quinoa-seeds.jpg"
+	},
+	{
+		"id": "7",
+		"name": "Calvin",
+		"description": "Hvem sagde Klein?",
+		"category": "Specialties",
+		"img": "http://fanatic.rs/wp-content/uploads/2015/07/chia.jpg"
+	}
+
+]

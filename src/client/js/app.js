@@ -3,13 +3,13 @@
 
 		angular
 			.module("Main",
-					["Main.home", "Main.products", "Main.news", "Main.header", "ngRoute"]
+					["Main.home", "Main.brands", "Main.news", "Main.header", "Main.admin", "ngRoute"]
 		 	)
 			.config(function($routeProvider){
         	$routeProvider
-        	        .when("/products", {
-                                templateUrl: "src/client/views/products.html",
-                                controller: "productsCtrl"
+        	        .when("/brands", {
+                                templateUrl: "src/client/views/brands.html",
+                                controller: "brandsCtrl"
                     })
                     .when("/news", {
                                 templateUrl: "src/client/views/news.html",
@@ -26,6 +26,10 @@
                     .when("/home", {
                     			templateUrl: "src/client/views/home.html",
                     			controller: "homeCtrl"
+                    })
+                    .when("/admin", {
+                                templateUrl: "src/admin/admin.html",
+                                controller: "adminCtrl"
                     })
                     .otherwise({ redirectTo: '/home'});
 		})

@@ -1,0 +1,56 @@
+<h1>Admin Panel</h1>
+
+    <div class="well" >
+ 
+      <h3>Create a New Brand</h3>
+      
+      <table class="table table-bordered table-stripped">
+        <tr>  
+          <th>Name</th>
+          <th>Description</th>
+          <th>Price</th>
+          <th>Category</th>
+        </tr>
+        <tr>
+          <td><input type="text" ng-model="brand.name"></td>
+          <td><input type="text" ng-model="brand.description"></td>
+          <td><input type="text" ng-model="brand.price"></td>
+          <td><input type="text" ng-model="brand.category"></td>
+          <td><button class="btn btn-default" ng-click="createBrand()">Create Brand</td>
+      </table>
+
+      <h3>Brands currently stored in the database:</h3>
+      
+      <table class="table table-bordered table-stripped">
+        <th>Name</th>
+        <th>Description</th>
+        <th>Category</th>
+        <th>Image</th>
+        <th>Feature not yet available</th>
+        <th>Feature not yet available</th>
+        <tr ng-repeat="brand in brands" style="overflow: hidden;">          
+          <td>
+             {{brand.name}}
+          </td>
+          <td>
+             {{brand.description}}
+          </td>
+          <td> 
+             {{ brand.category }}
+          </td>
+          <td>             
+             <img style="width: 25%; height: auto;" src="{{ brand.img }}">
+          </td>
+          <td>
+          	<button ng-click="delBrand()" class="btn">Delete brand</button>
+          </td>  
+          <td>
+          	<button ng-click="upBrand()" class="btn">Update brand</button>
+          </td>              
+        </tr>        
+      </table>
+      
+    </div>
+
+<a href="#brands" class="btn btn-default"> Back to the Admin Panel </a>
+
