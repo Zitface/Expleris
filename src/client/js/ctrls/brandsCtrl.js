@@ -5,7 +5,15 @@
 		.module("Main.brands", [])
 		.controller("brandsCtrl", brandsCtrl);
 
-	function brandsCtrl($scope, $http){
+	function brandsCtrl($scope, brandsService, $http){
+
+			var modelProducts = function(data){
+				$scope.products = data;
+			}
+
+			var modelCategories = function(data){
+				$scope.categories = data;
+			}	
 
 			var getBrands = function(response){
 				$scope.brands = response.data;

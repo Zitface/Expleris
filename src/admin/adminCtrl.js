@@ -7,13 +7,17 @@
 
 	function adminCtrl($scope, adminService, $http){
 
+			var modelBrands = function(data){
+				$scope.brands = data;
+			}
+
+			var modelCategories = function(data){
+				$scope.categories = data;
+			}
+
 			var getBrands = function(response){
 				$scope.brands = response.data;
 			}	
-
-			var getCategories = function(response){
-				$scope.categories = response.data;
-			}
 
 			var getError = function(reason){
 				$scope.error = "Sorry, something went wrong with the data.";
@@ -25,11 +29,18 @@
 				adminService.createBrand(brand);
 			}
 
-			$http.get("src/client/data/brands.json")
-				 .then(getBrands, getError);
+			$scope.delBrand = function(){
+				console.log("Delete!")
+				adminService.delBrand()
+				.then(adminService.getBrands()
+						.then(modelBrands))
+		    }
 
-			$http.get("src/client/data/categories.json")
-				 .then(getCategories, getError);
+			adminService.getBrands()
+			.then(modelBrands);
+
+			adminService.getCategories()
+			.then(modelCategories);
 
 	}
 

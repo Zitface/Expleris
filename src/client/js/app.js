@@ -3,7 +3,8 @@
 
 		angular
 			.module("Main",
-					["Main.home", "Main.brands", "Main.news", "Main.header", "Main.admin", "ngRoute"]
+					["Main.home", "Main.brands", "Main.brand", "Main.news", 
+                     "Main.header", "Main.admin", "ngRoute"]
 		 	)
 			.config(function($routeProvider){
         	$routeProvider
@@ -30,6 +31,10 @@
                     .when("/admin", {
                                 templateUrl: "src/admin/admin.html",
                                 controller: "adminCtrl"
+                    })
+                    .when('/brand/:id', {
+                                templateUrl: "src/client/views/brand.html",
+                                controller: "brandCtrl"
                     })
                     .otherwise({ redirectTo: '/home'});
 		})

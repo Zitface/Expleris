@@ -8,14 +8,14 @@
         <tr>  
           <th>Name</th>
           <th>Description</th>
-          <th>Price</th>
+          <th>Image</th>
           <th>Category</th>
         </tr>
         <tr>
-          <td><input type="text" ng-model="brand.name"></td>
-          <td><input type="text" ng-model="brand.description"></td>
-          <td><input type="text" ng-model="brand.price"></td>
-          <td><input type="text" ng-model="brand.category"></td>
+          <td><input type="text" ng-model="brand.name" placeholder="Brand name"></td>
+          <td><input type="text" ng-model="brand.description" placeholder="Brand description"></td>
+          <td><input type="text" ng-model="brand.img" placeholder="Provide image link"></td>
+          <td><input type="text" ng-model="brand.category" placeholder="Brand category"></td>
           <td><button class="btn btn-default" ng-click="createBrand()">Create Brand</td>
       </table>
 
@@ -39,7 +39,7 @@
              {{ brand.category }}
           </td>
           <td>             
-             <img style="width: 25%; height: auto;" src="{{ brand.img }}">
+             <img style="width: 25%; height: auto;" ng-src="{{ brand.img }}">
           </td>
           <td>
           	<button ng-click="delBrand()" class="btn">Delete brand</button>
@@ -52,5 +52,5 @@
       
     </div>
 
-<a href="#brands" class="btn btn-default"> Back to the Admin Panel </a>
+<a href="#home" class="btn btn-default"> Back to the Website </a>
 

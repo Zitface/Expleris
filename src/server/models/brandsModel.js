@@ -2,8 +2,8 @@ var mongoose = require('mongoose');
 
 var schema = {
 	name: String,
-	img: String,
 	description: String,
+	img: String,
 	category: String
 }
 
