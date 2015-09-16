@@ -10,7 +10,7 @@
 }
 
 html, body {
-    font-family: 'Lato';
+    font-family: Prototype;
     height: 100%;
 }
 
@@ -48,34 +48,54 @@ html {
 }
 
 .navbar-nav li a {
- line-height: 100px;
+ line-height: 102px;
 }
 
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   color: #ff1561;
-  background-color: transparent;
+  background-color: #353554; /* These lines determines the background color of li elements when hovered or activated */
 }
+
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
   color: #ff1561;
-  background-color: transparent;
+  background-color: #353554;
 }
 
 .navbar-inner {
   background-color: white;
 }
 
+.navbar {
+  
+}
 /* Dropwdown styles */
 
 .dropdown-menu > li > a {
-    display: inline-block !important;
-    float: left;
- }
+  display: inline-block !important;
+  line-height: 20px !important; /* This makes the dropdown menu appear less tall */
+}
+
+.dropdown-menu {
+  padding: 0;
+  border-color: #353554;
+}
+
+.dropdown-menu > li > a {
+  background-color: #353554;
+  color: #ff1561;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  color: #ff1561;
+  background-color: #324;
+}
 
 .open > ul {
-    display: inline-flex !important;
+  display: inline-flex !important;
 }
 
 @media (min-width: 979px) {
