@@ -8,7 +8,7 @@ var brand = {
     newBrand.save();
   },
   delete: function(req, res, next){
-    res.json({type: "Delete", id: req.params.id});
+    res.json({type: "Delete", _id: req.params.id});
   },
   getAll: function(req, res, next){
     Brands.find(function(err, data){

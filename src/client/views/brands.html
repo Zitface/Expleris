@@ -1,4 +1,4 @@
-
+<div ng-controller="brandsCtrl">
 <h1>Brands Portfolio</h1>
 <p>Welcome to our Brands Portfolio. Below you can browse the different partners with which we work and read about what they each offer......</p>
 
@@ -12,8 +12,9 @@
 			</li>
 		</ul>
 
-		<div style="overflow: hidden; background-color: gray; width: 15%; height: 200px; margin: 2.5%; float: left;" ng-repeat="brand in brands | filter:productName | filter:catFilter">
+		<div style="overflow: hidden; background-color: gray; width: 15%; height: 200px; margin: 2.5%; float: 			  left;" ng-repeat="brand in brands | filter:brandName | filter:catFilter">
 			<a href="#/brand/{{brand.id}}">
 				<img style="width: 100%; height: auto;" ng-src="{{ brand.img }}">
 			</a>
 		</div>
+</div>

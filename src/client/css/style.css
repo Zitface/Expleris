@@ -1,9 +1,21 @@
+@font-face {
+    font-family: CaviarDreams;
+    src: url(fonts/caviar_dreams/CaviarDreams.ttf);
+    font-family: Prototype;
+    src: url(fonts/prototype/Prototype.ttf);
+}
+
 * {
     margin: 0;
 }
 
 html, body {
+    font-family: 'Lato';
     height: 100%;
+}
+
+html {
+  overflow-y: scroll;
 }
 
 /* Footer positioning */
@@ -21,6 +33,38 @@ html, body {
 
 .footer {
   background-color: gray;
+}
+
+
+/* Nav styles */
+
+.navbar {
+  font-size: 13pt;
+  height: auto;
+}
+
+.navbar-nav {
+  margin-right: 10%;
+}
+
+.navbar-nav li a {
+ line-height: 100px;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #ff1561;
+  background-color: transparent;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #ff1561;
+  background-color: transparent;
+}
+
+.navbar-inner {
+  background-color: white;
 }
 
 /* Dropwdown styles */

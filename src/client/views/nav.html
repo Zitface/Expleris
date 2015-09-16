@@ -1,25 +1,31 @@
 <div class="navbar navbar-default navbar-static-top" ng-controller="headerCtrl">
-	<div class="container">
-		<a href="#home" class="navbar-brand">LOGO</a>
-			<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<div class="collapse navbar-collapse navHeaderCollapse">
-				<ul class="nav navbar-nav navbar-right">
-					<li ng-class="{ active: isActive('/brands')}" class="dropdown">
-						<a href="#brands" class="dropdown-toggle" data-toggle="dropdown">Brands<b class="caret"></b></a>
-						<ul class="dropdown-menu">
-							<li><a href="#essentialOils">Alitura</a></li>
-							<li><a href="#vegetables">Q-Kaffe</a></li>
-							<li><a href="#vegetables"></a></li>						
-						</ul>
-					</li>
-					<li ng-class="{ active: isActive('/news')}"><a href="#news">News</a></li>
-					<li ng-class="{ active: isActive('/aboutUs')}"><a href="#aboutUs">Abous Us</a></li>
-					<li ng-class="{ active: isActive('/contactUs')}"><a href="#contactUs">Contact Us</a></li> 	
-				</ul>
+	<div class="navbar-inner">
+		<div class="container">
+			<a href="#home" class="navbar-brand">
+				<img alt="Expleris" class="logo" src="src/client/images/expleris_logo.png" />
+			</a>
+				<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<div class="collapse navbar-collapse navHeaderCollapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li ng-class="{ active: isActive('/brands')}" class="dropdown">
+							<a href="#brands" class="dropdown-toggle" data-toggle="dropdown">Brands</a>
+							<ul class="dropdown-menu">
+								<li ng-repeat="brand in brands">
+									<a href="#/brand/{{brand.id}}">
+										{{brand.name}}
+									</a>
+								</li>			
+							</ul>
+						</li>
+						<li ng-class="{ active: isActive('/news')}"><a href="#news">News</a></li>
+						<li ng-class="{ active: isActive('/aboutUs')}"><a href="#aboutUs">Abous Us</a></li>
+						<li ng-class="{ active: isActive('/contactUs')}"><a href="#contactUs">Contact Us</a></li> 	
+					</ul>
+				</div>
 			</div>
-	</div>
+		</div>
 </div>

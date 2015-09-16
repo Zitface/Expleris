@@ -18,8 +18,7 @@ app.use(express.static(path.join(__dirname, '../../')));
 router.get('/api/brands', brand.getAll);
 router.get('/api/categories', category.getAll);
 router.post('/api/brand', brand.create);
-router.route('/api/brand/:id')
-	.delete(brand.delete);
+app.delete('/api/brand/:_id', brand.delete);
 
 
 app.use('/', router);

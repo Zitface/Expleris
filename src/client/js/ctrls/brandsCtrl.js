@@ -7,10 +7,10 @@
 
 	function brandsCtrl($scope, brandsService, $http){
 
-			var modelProducts = function(data){
-				$scope.products = data;
+			var modelBrands = function(data){
+				$scope.brands = data;
 			}
-
+			
 			var modelCategories = function(data){
 				$scope.categories = data;
 			}	
