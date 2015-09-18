@@ -2,7 +2,7 @@
 	<div class="navbar-inner">
 		<div class="container">
 			<a href="#home" class="navbar-brand">
-				<img alt="Expleris" class="logo" src="src/client/images/expleris_logo.png" />
+				<img alt="Expleris" class="logo" src="src/client/images/expleris_logo1.png" />
 			</a>
 				<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
 					<span class="icon-bar"></span>
@@ -16,13 +16,14 @@
 							<ul class="dropdown-menu">
 								<li ng-repeat="brand in brands">
 									<a href="#/brand/{{brand.id}}">
-										{{brand.id}}
+										{{brand.name}}
 									</a>
 								</li>			
 							</ul>
 						</li>
-						<li ng-class="{ active: isActive('/news')}"><a href="#news">News</a></li>
+						<li ng-class="{ active: isActive('/services')}"><a href="#services">Services</a></li>
 						<li ng-class="{ active: isActive('/aboutUs')}"><a href="#aboutUs">Abous Us</a></li>
+						<li ng-class="{ active: isActive('/news')}"><a href="#news">News & Events</a></li>
 						<li ng-class="{ active: isActive('/contactUs')}"><a href="#contactUs">Contact Us</a></li> 	
 					</ul>
 				</div>

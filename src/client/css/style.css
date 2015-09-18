@@ -1,17 +1,18 @@
 @font-face {
-    font-family: CaviarDreams;
-    src: url(fonts/caviar_dreams/CaviarDreams.ttf);
-    font-family: Prototype;
-    src: url(fonts/prototype/Prototype.ttf);
+  font-family: CaviarDreams;
+  src: url(fonts/caviar_dreams/CaviarDreams.ttf);
+  font-family: Prototype;
+  src: url(fonts/prototype/Prototype.ttf);
 }
 
 * {
-    margin: 0;
+  margin: 0;
+  list-style: none;
 }
 
 html, body {
-    font-family: Prototype;
-    height: 100%;
+  font-family: Prototype;
+  height: 100%;
 }
 
 html {
@@ -35,12 +36,14 @@ html {
   background-color: gray;
 }
 
-
 /* Nav styles */
 
 .navbar {
   font-size: 13pt;
   height: auto;
+ -webkit-box-shadow:  0px 5px 20px 0px rgba(0,0,0,0.40);
+  -moz-box-shadow:  0px 5px 20px 0px rgba(0,0,0,0.40);
+  box-shadow:  0px 5px 20px 0px rgba(0,0,0,0.40);
 }
 
 .navbar-nav {
@@ -48,20 +51,20 @@ html {
 }
 
 .navbar-nav li a {
- line-height: 102px;
+ line-height: 71px;
 }
 
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   color: #ff1561;
-  background-color: #353554; /* These lines determines the background color of li elements when hovered or activated */
+  background-color: #E0E0E0; /* These lines determines the background color of li elements when interacted with */
 }
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
   color: #ff1561;
-  background-color: #353554;
+  background-color: #E0E0E0;
 }
 
 .navbar-inner {
@@ -69,29 +72,34 @@ html {
 }
 
 .navbar {
-  
+  margin-bottom: 0;
 }
+
+.navbar ul li:hover > a {
+  background-color: #E0E0E0;
+}
+
 /* Dropwdown styles */
 
 .dropdown-menu > li > a {
   display: inline-block !important;
-  line-height: 20px !important; /* This makes the dropdown menu appear less tall */
+  line-height: 40px !important; /* This makes the dropdown menu appear less tall */
 }
 
 .dropdown-menu {
   padding: 0;
-  border-color: #353554;
+  border-color: #E0E0E0;
 }
 
 .dropdown-menu > li > a {
-  background-color: #353554;
-  color: #ff1561;
+  background-color: #E0E0E0;
+  color: #333333;
 }
 
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
   color: #ff1561;
-  background-color: #324;
+  background-color: #E0E0E0;
 }
 
 .open > ul {
@@ -103,4 +111,103 @@ html {
     display: inline-flex !important;
     float: left;
   }
+}
+/* Home page Styles */
+
+/* Home Page Carousel */
+.carousel {
+  height: 50%;
+}
+.fill {
+  -webkit-box-shadow: inset 0px -5px 20px 0px rgba(0,0,0,0.40);
+  -moz-box-shadow: inset 0px -5px 20px 0px rgba(0,0,0,0.40);
+  box-shadow: inset 0px -5px 20px 0px rgba(0,0,0,0.40);
+}
+
+.carousel .item,
+.carousel .item.active,
+.carousel .carousel-inner {
+    height: 460px;
+}
+
+.carousel .fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.carousel-control.left {
+    background-image: none!important ;
+    height: 460px; 
+}
+
+.carousel-control.right {
+    background-image: none!important ;
+    height: 460px; 
+}
+
+.carousel-indicators {
+    z-index: 2;    
+}
+
+.indicators {
+    z-index: 1;
+    width: 20%;
+    margin-left: 40%;
+}
+
+/* Home Page Boxes */
+
+.boxContainer {
+  margin: 5% 0%;
+  text-align: center;
+}
+
+.homeBox {
+   height: 300px;
+}
+
+.homeBox img {
+  filter: saturate(100%);
+  -webkit-filter: saturate(100%);
+  -moz-filter: saturate(100%);
+  -o-filter: saturate(100%);
+  -ms-filter: saturate(100%);
+
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+
+}
+
+.homeBox img:hover {
+  filter: saturate(150%);
+  -webkit-filter: saturate(150%);
+  -moz-filter: saturate(150%);
+  -o-filter: saturate(150%);
+  -ms-filter: saturate(150%);
+
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.borderLine {
+  border-left: 1px solid #e4e4e4;
+  border-right: 1px solid #e4e4e4;
+}
+
+/* Responsive Styles */
+
+
+@media(max-width:767px) {
+    
+    .carousel .carousel {
+        height: 70%;
+    }
 }
