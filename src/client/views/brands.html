@@ -9,13 +9,18 @@
 
 		<input type="search" placeholder="Search brand name" ng-model="brandName" />
 
-		<ul>
-			<li ng-repeat="cat in categories">
-				<input type="checkbox" ng-click="catChange(cat.category)" /> {{ cat.category }} 
-			</li>
-		</ul>
+		<div class="categoriesContainer col-md-12">
+			<ul>
+				<li>
+					<div ng-repeat="cat in categories" class="categoryItem" ng-click="catChange(cat.category); select($index)" ng-class="{sel: $index == selected}">
+						<p>{{ cat.category }}</p>
+						<img style="width: 100%; height: auto;" ng-src="{{cat.img}}" />
+					</div>
+				</li>
+			</ul>
+		</div>
 
-		<div style="overflow: hidden; background-color: gray; width: 15%; height: 200px; margin: 2.5%; float: 			  left;" ng-repeat="brand in brands | filter:brandName | filter:catFilter">
+		<div class="brandsContainer" ng-repeat="brand in brands | filter:brandName | filter:catFilter">
 			<a href="#/brand/{{brand.id}}">
 				<img style="width: 100%; height: auto;" ng-src="{{ brand.img }}">
 			</a>

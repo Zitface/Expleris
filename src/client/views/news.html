@@ -1,14 +1,31 @@
 <div class="container">
-	<h1>News</h1>
-	<h1>News</h1>
-	<h1>News</h1>
-	<h1>News</h1>
-	<h1>News</h1>
-	<h1>News</h1>
-	<h1>News</h1>
-	<h1>News</h1>
-	<h1>News</h1>
-	<h1>News</h1>
-	<h1>News</h1>
-	<h1>News</h1>
+
+	<div ng-controller="newsCtrl" class="col-md-12">
+
+		<div class="col-md-8">
+
+		<h1>News</h1>
+
+			<div ng-repeat="newsItem in news" style="background-color: gray;" class="shade">
+				<h1>{{newsItem.title}}</h1>
+				<p>{{newsItem.bodytext}}</p>
+				<span><em>date:</em>{{newsItem.date}}</span>
+			</div>
+
+		</div>
+
+		<div class="col-md-4">
+
+		<h1>Events</h1>
+
+			<div ng-repeat="newsItem in news" style="background-color: gray;">
+				<h1>{{newsItem.title}}</h1>
+				<p>{{newsItem.bodytext}}</p>
+				<span><em>date:</em>{{newsItem.date}}</span>
+			</div>
+
+		</div>
+
+	</div>
+
 </div>

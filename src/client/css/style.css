@@ -19,6 +19,12 @@ html {
   overflow-y: scroll;
 }
 
+.shade {
+  -webkit-box-shadow: 2px 2px 6px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 2px 6px 1px rgba(0,0,0,0.75);
+  box-shadow: 2px 2px 6px 1px rgba(0,0,0,0.75);
+}
+
 /* Footer positioning */
 
 #wrapper {
@@ -33,7 +39,8 @@ html {
 }
 
 .footer {
-  background-color: gray;
+  background-image: url("../images/footer.png");
+  background-repeat: no-repeat;
 }
 
 /* Nav styles */
@@ -41,9 +48,6 @@ html {
 .navbar {
   font-size: 13pt;
   height: auto;
- -webkit-box-shadow:  0px 5px 20px 0px rgba(0,0,0,0.40);
-  -moz-box-shadow:  0px 5px 20px 0px rgba(0,0,0,0.40);
-  box-shadow:  0px 5px 20px 0px rgba(0,0,0,0.40);
 }
 
 .navbar-nav {
@@ -112,16 +116,16 @@ html {
     float: left;
   }
 }
-/* Home page Styles */
+/* HOME PAGE STYLES */
 
-/* Home Page Carousel */
+/* home page carousel */
 .carousel {
   height: 50%;
 }
 .fill {
-  -webkit-box-shadow: inset 0px -5px 20px 0px rgba(0,0,0,0.40);
-  -moz-box-shadow: inset 0px -5px 20px 0px rgba(0,0,0,0.40);
-  box-shadow: inset 0px -5px 20px 0px rgba(0,0,0,0.40);
+  -webkit-box-shadow: inset 0px 0px 10px rgba(0,0,0,0.90);
+  -moz-box-shadow: inset 0px 0px 10px rgba(0,0,0,0.90);
+  box-shadow: inset 0px 0px 10px rgba(0,0,0,0.90);
 }
 
 .carousel .item,
@@ -157,7 +161,7 @@ html {
     margin-left: 40%;
 }
 
-/* Home Page Boxes */
+/* home page boxes */
 
 .boxContainer {
   margin: 5% 0%;
@@ -200,6 +204,38 @@ html {
 .borderLine {
   border-left: 1px solid #e4e4e4;
   border-right: 1px solid #e4e4e4;
+}
+
+/* BRANDS PAGE STYLES */
+
+/* category styles */
+
+.categoriesContainer {
+  background-color: blue;
+}
+
+.categoryItem {
+  overflow: hidden; 
+  background-color: gray; 
+  width: 10%; 
+  height: 100px; 
+  margin: 3%; 
+  float: left;
+}
+
+.sel {
+    background-color: red;
+}
+
+/* brands styles */
+
+.brandsContainer {
+  overflow: hidden; 
+  background-color: gray; 
+  width: 15%; 
+  height: 200px; 
+  margin: 2.5%; 
+  float: left;
 }
 
 /* Responsive Styles */

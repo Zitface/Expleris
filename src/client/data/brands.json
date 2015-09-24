@@ -4,50 +4,43 @@
 		"id": "1",
 		"name": "Quinoa",
 		"description": "This is a product from Venezuela",
-		"category": "Organic",
-		"img": "http://www.seedguides.info/quinoa/quinoa-seeds.jpg"
+		"category": "Luxury/Exclusive",
+		"img": "src/client/images/testorganic.png"
 	},
 	{
 		"id": "2",
 		"name": "Kaffe",
 		"description": "Den er helt frisk",
-		"category": "Organic",
-		"img": "http://www.seedguides.info/quinoa/quinoa-seeds.jpg"
+		"category": "Specialty & Gourmet",
+		"img": "http://www.dailyperricone.com/wp-content/uploads/2010/08/Super-Foods-505x336.jpg"
 	},
 	{
 		"id": "3",
-		"name": "Lars",
-		"description": "Han er sgu sød",
-		"category": "Specialties",
-		"img": "http://fanatic.rs/wp-content/uploads/2015/07/chia.jpg"
+		"name": "Per",
+		"description": "Er postmand og har en kat",
+		"category": "Healthy & Organic",
+		"img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Rice_grains_%28IRRI%29.jpg/220px-Rice_grains_%28IRRI%29.jpg"
 	},
 	{
 		"id": "4",
-		"name": "Per",
-		"description": "Er postmand og har en kat",
-		"category": "Organic",
-		"img": "http://www.seedguides.info/quinoa/quinoa-seeds.jpg"
+		"name": "Hans",
+		"description": "Har en fed bondegaard",
+		"category": "Healthy & Organic",
+		"img": "http://www.hannasgourmetcatering.com/publishImages/index~~element43.jpg"
 	},
 	{
 		"id": "5",
-		"name": "Hans",
-		"description": "Har en fed bondegaard",
-		"category": "Specialties",
-		"img": "http://fanatic.rs/wp-content/uploads/2015/07/chia.jpg"
+		"name": "Sinatra",
+		"description": "Fornavnet er Frank",
+		"category": "Non-food",
+		"img": "http://www.davidsuzuki.org/issues/assets_c/2010/03/cosmetics%20department-thumb-480xauto-1007.jpg"
 	},
 	{
 		"id": "6",
-		"name": "Sinatra",
-		"description": "Fornavnet er Frank",
-		"category": "Organic",
-		"img": "http://www.seedguides.info/quinoa/quinoa-seeds.jpg"
-	},
-	{
-		"id": "7",
 		"name": "Calvin",
 		"description": "Hvem sagde Klein?",
-		"category": "Specialties",
-		"img": "http://fanatic.rs/wp-content/uploads/2015/07/chia.jpg"
+		"category": "Supreme Convenient",
+		"img": "http://sycamoreintegratedhealth.com/wp-content/uploads/2013/05/135898423.jpg"
 	}
 
 ]

@@ -1,0 +1,52 @@
+[
+	{
+		"id": 1,
+		"title": "The New Superfood!",
+		"bodytext": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum",
+		"date": "23-09-2015",
+		"img": "http://www.dailyperricone.com/wp-content/uploads/2010/08/Super-Foods-505x336.jpg" 
+	},
+	{
+		"id": 2,
+		"title": "Eplerix: A website revamp",
+		"bodytext": "Lorem ipsum",
+		"date": "24-09-2015",
+		"img": "http://www.hannasgourmetcatering.com/publishImages/index~~element43.jpg"
+	},
+	{
+		"id": 3,
+		"title": "Birthday coming up",
+		"bodytext": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum",
+		"date": "25-09-2015",
+		"img": "src/client/images/testorganic.png"
+	},
+	{
+		"id": 3,
+		"title": "Birthday coming up",
+		"bodytext": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum",
+		"date": "25-09-2015",
+		"img": "src/client/images/testorganic.png"
+	},
+	{
+		"id": 3,
+		"title": "Birthday coming up",
+		"bodytext": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum",
+		"date": "25-09-2015",
+		"img": "src/client/images/testorganic.png"
+	},
+	{
+		"id": 3,
+		"title": "Birthday coming up",
+		"bodytext": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum",
+		"date": "25-09-2015",
+		"img": "src/client/images/testorganic.png"
+	},
+	{
+		"id": 3,
+		"title": "Birthday coming up",
+		"bodytext": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum",
+		"date": "25-09-2015",
+		"img": "src/client/images/testorganic.png"
+	}
+
+]

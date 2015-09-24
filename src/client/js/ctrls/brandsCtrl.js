@@ -29,6 +29,7 @@
 
 			$scope.categoriesSelected = [];
 			$scope.catChange = function(category) {
+				if($scope.categoriesSelected.length > 0) $scope.categoriesSelected = [];
 				var i = $scope.categoriesSelected.indexOf(category);
 					if(i > -1) {
 						$scope.categoriesSelected.splice(i, 1);
@@ -36,6 +37,14 @@
 						$scope.categoriesSelected.push(category);
 					}
 			}
+
+			//The 'selected' function below adds a class (sel) to the category clicked.
+
+			$scope.selected = -1;
+
+			$scope.select = function(index) {
+      			$scope.selected = index; 
+   			};
 
 			$scope.catFilter = function(brand){
 				if($scope.categoriesSelected.length > 0){
