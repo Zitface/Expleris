@@ -1,3 +1,33 @@
+/* COLORS: 
+
+Blues:
+
+  light: #00aeef
+
+  #182640
+
+Pinks:
+
+  #ff1561
+
+  #730a2c
+
+Yellows:
+
+  #fff200
+
+  #ffa100
+
+Grays:
+
+  #f2f2f2
+
+  #e4e4e4
+
+  #1c1c1c
+
+*/
+
 @font-face {
   font-family: CaviarDreams;
   src: url(fonts/caviar_dreams/CaviarDreams.ttf);
@@ -35,12 +65,12 @@ html {
 }
 
 .footer, .push {
-  height: 200px;
+  height: 438px;
 }
 
 .footer {
-  background-image: url("../images/footer.png");
-  background-repeat: no-repeat;
+  background-image: url("../images/footer1.png");
+  background-repeat: repeat;
 }
 
 /* Nav styles */
@@ -238,7 +268,51 @@ html {
   float: left;
 }
 
-/* Responsive Styles */
+/* ABOUT US STYLES */
+
+.aboutUs h1 {
+  color: #182640;
+}
+
+.aboutUs h3 {
+  margin-top: 0px;
+}
+
+.aboutUs p {
+  margin: 0;
+}
+
+.visionContainer {
+  width: 48%;
+  float: left;
+  padding-left: 2%;
+  margin-left: 2%;
+  margin-top: 20px;
+  border-left: 1px solid #ffa100;
+}
+
+.missionContainer {
+  width: 48%;
+  float: right;
+  padding-left: 2%;
+  margin-left: 2%;
+  margin-top: 20px;
+  border-left: 1px solid #ffa100;
+}
+
+.valueContainer {
+  width: 100%;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 50px;
+  padding-bottom: 10px;
+  border: 1px solid #e4e4e4;
+}
+
+.value {
+  margin-top: 10px;
+}
+/* RESPONSIVE STYLES */
 
 
 @media(max-width:767px) {
