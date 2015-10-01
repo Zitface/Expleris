@@ -18,17 +18,16 @@ app.use(express.static(path.join(__dirname, '../../')));
 router.get('/api/brands', brand.getAll);
 router.get('/api/categories', category.getAll);
 router.post('/api/brand', brand.create);
-app.delete('/api/brand/:_id', brand.delete);
-
+app.delete('/api/brand/:id', brand.delete);
 
 app.use('/', router);
 
 //Database and server connection
 mongoose.connect('mongodb://localhost/' + database);
 
-var db = mongoose.connection;
-db.on('error', console.error);
-db.once('open', startServer);
+var monCon = mongoose.connection;
+monCon.on('error', console.error);
+monCon.once('open', startServer);
 
 function startServer(){
 	var server = app.listen(4000, function () {

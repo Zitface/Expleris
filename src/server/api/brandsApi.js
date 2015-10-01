@@ -1,4 +1,6 @@
-var Brands = require('../models/brandsModel');
+var Brands    = require('../models/brandsModel'),
+    mongojs   = require('mongojs'),
+    db        = mongojs('explerisDb', ['brands']);
 
 var brand = {
   
@@ -8,7 +10,11 @@ var brand = {
     newBrand.save();
   },
   delete: function(req, res, next){
-    res.json({type: "Delete", _id: req.params.id});
+    var id = req.params.id;
+    console.log(id);
+    db.brands.remove({_id: mongojs.ObjectId(id)}, function(err, data){
+        res.json(data);
+    })
   },
   getAll: function(req, res, next){
     Brands.find(function(err, data){

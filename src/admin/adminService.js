@@ -37,17 +37,17 @@
 			})
 		}
 
-		var delBrand = function(id){
+		/*var delBrand = function(id){
 			console.log(id);
 			return $http.delete("/api/brand/" + id)
 						.then(function(response){
 							return response;
 						});
-		}
+		}*/
 
 		return {
 			createBrand:createBrand,
-			delBrand:delBrand,
+			//delBrand:delBrand,
 			getBrands:getBrands,
 			getCategories:getCategories
 		}

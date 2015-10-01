@@ -4,7 +4,7 @@
 		"id": "1",
 		"name": "Quinoa",
 		"description": "This is a product from Venezuela",
-		"category": "Luxury/Exclusive",
+		"category": "Exquisit & Uniqueness",
 		"img": "src/client/images/testorganic.png"
 	},
 	{
@@ -26,7 +26,7 @@
 		"name": "Hans",
 		"description": "Har en fed bondegaard",
 		"category": "Healthy & Organic",
-		"img": "http://www.hannasgourmetcatering.com/publishImages/index~~element43.jpg"
+		"img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Rice_grains_%28IRRI%29.jpg/220px-Rice_grains_%28IRRI%29.jpg"
 	},
 	{
 		"id": "5",
@@ -39,8 +39,63 @@
 		"id": "6",
 		"name": "Calvin",
 		"description": "Hvem sagde Klein?",
-		"category": "Supreme Convenient",
+		"category": "Premium Convenience",
 		"img": "http://sycamoreintegratedhealth.com/wp-content/uploads/2013/05/135898423.jpg"
+	},
+	{
+		"id": "7",
+		"name": "Ares",
+		"description": "Krigsguden",
+		"category": "Non-food",
+		"img": "http://www.davidsuzuki.org/issues/assets_c/2010/03/cosmetics%20department-thumb-480xauto-1007.jpg"
+	},
+	{
+		"id": "8",
+		"name": "Medusa",
+		"description": "Slangehovedbeklædningsdamen",
+		"category": "Healthy & Organic",
+		"img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Rice_grains_%28IRRI%29.jpg/220px-Rice_grains_%28IRRI%29.jpg"
+	},
+	{
+		"id": "9",
+		"name": "Hades",
+		"description": "Underverdenens Gud",
+		"category": "Specialty & Gourmet",
+		"img": "http://www.dailyperricone.com/wp-content/uploads/2010/08/Super-Foods-505x336.jpg"
+	},
+	{
+		"id": "10",
+		"name": "Hefaistos",
+		"description": "Smedenes Gud",
+		"category": "Premium Convenience",
+		"img": "http://sycamoreintegratedhealth.com/wp-content/uploads/2013/05/135898423.jpg"
+	},
+	{
+		"id": "11",
+		"name": "Sisyfos",
+		"description": "Sikke et arbejde!",
+		"category": "Exquisit & Uniqueness",
+		"img": "src/client/images/testorganic.png"
+	},
+	{
+		"id": "12",
+		"name": "Atlas",
+		"description": "Light weight baby",
+		"category": "Specialty & Gourmet",
+		"img": "http://www.dailyperricone.com/wp-content/uploads/2010/08/Super-Foods-505x336.jpg"
+	},
+	{
+		"id": "13",
+		"name": "Prometheus",
+		"description": "Har sgu lidt ondt i maven",
+		"category": "Non-food",
+		"img": "http://www.davidsuzuki.org/issues/assets_c/2010/03/cosmetics%20department-thumb-480xauto-1007.jpg"
+	},
+	{
+		"id": "14",
+		"name": "Icaros",
+		"description": "'Av for satan den er varm!'",
+		"category": "Exquisit & Uniqueness",
+		"img": "src/client/images/testorganic.png"
 	}
-
 ]

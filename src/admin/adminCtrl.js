@@ -29,11 +29,12 @@
 				adminService.createBrand(brand);
 			}
 
-			$scope.delBrand = function(){
-				console.log("Delete!")
-				adminService.delBrand()
-				.then(adminService.getBrands()
-						.then(modelBrands))
+			$scope.delBrand = function(id){
+				console.log(id);
+				$http.delete("/api/brand/" + id)
+				.then(function(response){
+							return response;
+						});
 		    }
 
 			adminService.getBrands()

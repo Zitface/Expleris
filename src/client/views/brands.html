@@ -3,11 +3,16 @@
 
 <div ng-controller="brandsCtrl">
 <h1>Brands Portfolio</h1>
-<p>Welcome to our Brands Portfolio. Below you can browse the different partners with which we work and read about what they each offer......</p>
+<p>Welcome to our Brands Portfolio. Use the categories below to display desired.</p>
 
 		<p>{{ error }}</p>
 
-		<input type="search" placeholder="Search brand name" ng-model="brandName" />
+		<div class="row">
+		  <div class="col-lg-6">
+		    <div class="input-group">
+		      <input type="text" class="form-control" placeholder="Search for a brand" ng-model="brandName">
+		    </div><!-- /input-group -->
+		  </div>
 
 		<div class="categoriesContainer col-md-12">
 			<ul>
