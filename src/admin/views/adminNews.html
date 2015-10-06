@@ -1,0 +1,59 @@
+<div class="well container"> 
+
+  <h2>News</h2>
+
+    <h3>Create a New News Item</h3>
+    
+    <table class="table table-bordered table-stripped">
+      <tr>  
+        <th>Name</th>
+        <th>Description</th>
+        <th>Image</th>
+        <th>Category</th>
+      </tr>
+      <tr>
+        <td><input type="text" ng-model="brand.name" placeholder="Brand name"></td>
+        <td><input type="text" ng-model="brand.description" placeholder="Brand description"></td>
+        <td><input type="text" ng-model="brand.img" placeholder="Provide image link"></td>
+        <td><input type="text" ng-model="brand.category" placeholder="Brand category"></td>
+        <td><button class="btn btn-success" ng-click="createBrand()">Create News Item</td>
+    </table>
+
+    <h3>News currently stored in the database:</h3>
+    
+    <table class="table table-bordered table-stripped">
+      <th>Id</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Category</th>
+      <th>Image</th>
+      <th>Feature not yet available</th>
+      <th>Feature not yet available</th>
+      <tr ng-repeat="brand in brands" style="overflow: hidden;">          
+        <td>
+           {{brand._id}}
+        </td>
+        <td>
+           {{brand.name}}
+        </td>
+        <td>
+           {{brand.description}}
+        </td>
+        <td> 
+           {{ brand.category }}
+        </td>
+        <td>             
+           <img style="width: 25%; height: auto;" ng-src="{{ brand.img }}">
+        </td>
+        <td>
+        	<button ng-click="delBrand(brand._id)" class="btn btn-danger">Delete News Item</button>
+        </td>  
+        <td>
+        	<button ng-click="upBrand()" class="btn btn-primary">Update News Item</button>
+        </td>              
+      </tr>        
+    </table>
+
+    <a href="#admin" class="btn btn-info">Back to the Admin Panel</a>
+
+</div>

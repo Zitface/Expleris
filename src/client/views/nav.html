@@ -12,11 +12,16 @@
 				<div class="collapse navbar-collapse navHeaderCollapse">
 					<ul class="nav navbar-nav navbar-right">
 						<li ng-class="{ active: isActive('/brands')}" class="dropdown">
-							<a href="#brands" class="dropdown-toggle" data-toggle="dropdown">Brands</a>
+							<a href="#brands" class="dropdown-toggle" data-toggle="dropdown">Portfolio</a>
 							<ul class="dropdown-menu">
-								<li ng-repeat="brand in brands">
+								<li>
 									<a href="#/brand/{{brand.id}}">
-										{{brand.name}}
+										<p>Foods</p>
+									</a>
+								</li>
+								<li>
+									<a href="#/brand/{{brand.id}}">
+										<p>Non-food</p>
 									</a>
 								</li>			
 							</ul>
@@ -24,7 +29,8 @@
 						<li ng-class="{ active: isActive('/services')}"><a href="#services">Services</a></li>
 						<li ng-class="{ active: isActive('/aboutUs')}"><a href="#aboutUs">Abous Us</a></li>
 						<li ng-class="{ active: isActive('/news')}"><a href="#news">News & Events</a></li>
-						<li ng-class="{ active: isActive('/contactUs')}"><a href="#contactUs">Contact Us</a></li> 	
+						<li ng-class="{ active: isActive('/contactUs')}"><a href="#contactUs">Contact Us</a></li> 
+						<li ng-class="{ active: isActive('/admin')}"><a href="#admin">Admin Panel</a></li>	
 					</ul>
 				</div>
 			</div>

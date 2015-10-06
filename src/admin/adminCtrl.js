@@ -24,7 +24,7 @@
 			}
 
 			$scope.createBrand = function(brand){
-				console.log("The brand has been created and saved in the database")
+				console.log("The brand has been created and stored in the database")
 				var brand = this.brand;
 				adminService.createBrand(brand);
 			}

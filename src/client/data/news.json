@@ -4,6 +4,7 @@
 		"title": "The New Superfood!",
 		"bodytext": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum",
 		"date": "23-09-2015",
+		"time": "17:00",
 		"img": "http://www.dailyperricone.com/wp-content/uploads/2010/08/Super-Foods-505x336.jpg" 
 	},
 	{
@@ -11,6 +12,7 @@
 		"title": "Eplerix: A website revamp",
 		"bodytext": "Lorem ipsum",
 		"date": "24-09-2015",
+		"time": "17:00",
 		"img": "http://www.hannasgourmetcatering.com/publishImages/index~~element43.jpg"
 	},
 	{
@@ -18,6 +20,7 @@
 		"title": "Birthday coming up",
 		"bodytext": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum",
 		"date": "25-09-2015",
+		"time": "17:00",
 		"img": "src/client/images/testorganic.png"
 	},
 	{
@@ -25,6 +28,7 @@
 		"title": "Birthday coming up",
 		"bodytext": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum",
 		"date": "25-09-2015",
+		"time": "17:00",
 		"img": "src/client/images/testorganic.png"
 	},
 	{
@@ -32,6 +36,7 @@
 		"title": "Birthday coming up",
 		"bodytext": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum",
 		"date": "25-09-2015",
+		"time": "17:00",
 		"img": "src/client/images/testorganic.png"
 	},
 	{
@@ -39,6 +44,7 @@
 		"title": "Birthday coming up",
 		"bodytext": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum",
 		"date": "25-09-2015",
+		"time": "17:00",
 		"img": "src/client/images/testorganic.png"
 	},
 	{
@@ -46,6 +52,7 @@
 		"title": "Birthday coming up",
 		"bodytext": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum",
 		"date": "25-09-2015",
+		"time": "17:00",
 		"img": "src/client/images/testorganic.png"
 	}
 

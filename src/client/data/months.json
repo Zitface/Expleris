@@ -1,0 +1,50 @@
+[
+	{
+		"month": "January",
+		"abrev": "JAN"
+	},
+	{
+		"month": "Februrary",
+		"abrev": "FEB"
+	},
+	{
+		"month": "March",
+		"abrev": "MAR"
+	},
+	{
+		"month": "April",
+		"abrev": "APR"
+	},
+	{
+		"month": "May",
+		"abrev": "MAY"
+	},
+	{
+		"month": "June",
+		"abrev": "JUN"
+	},
+	{
+		"month": "July",
+		"abrev": "JUL"
+	},
+	{
+		"month": "August",
+		"abrev": "AUG"
+	},
+	{
+		"month": "September",
+		"abrev": "SEP"
+	},
+	{
+		"month": "October",
+		"abrev": "OCT"
+	},
+	{
+		"month": "November",
+		"abrev": "NOV"
+	},
+	{
+		"month": "December",
+		"abrev": "DEC"
+	}
+]

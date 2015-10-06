@@ -1,9 +1,8 @@
 
-<div class="container">
+<div class="container" ng-controller="brandsCtrl">
 
-<div ng-controller="brandsCtrl">
 <h1>Brands Portfolio</h1>
-<p>Welcome to our Brands Portfolio. Use the categories below to display desired.</p>
+<p>Welcome to our Brands Portfolio. Use the categories below to filter the brands.</p>
 
 		<p>{{ error }}</p>
 
@@ -11,14 +10,14 @@
 		  <div class="col-lg-6">
 		    <div class="input-group">
 		      <input type="text" class="form-control" placeholder="Search for a brand" ng-model="brandName">
-		    </div><!-- /input-group -->
+		    </div>
 		  </div>
 
 		<div class="categoriesContainer col-md-12">
 			<ul>
 				<li>
 					<div ng-repeat="cat in categories" class="categoryItem" ng-click="catChange(cat.category); select($index)" ng-class="{sel: $index == selected}">
-						<p>{{ cat.category }}</p>
+						<p>{{cat.category}}</p>
 						<img style="width: 100%; height: auto;" ng-src="{{cat.img}}" />
 					</div>
 				</li>
@@ -27,8 +26,7 @@
 
 		<div class="brandsContainer" ng-repeat="brand in brands | filter:brandName | filter:catFilter">
 			<a href="#/brand/{{brand.id}}">
-				<img style="width: 100%; height: auto;" ng-src="{{ brand.img }}">
+				<img style="width: 100%; height: auto;" ng-src="{{brand.img}}">
 			</a>
 		</div>
-</div>
 </div>

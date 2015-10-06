@@ -1,27 +1,39 @@
-<div class="container">
+<div class="container" ng-controller="newsCtrl">
 
 	<div ng-controller="newsCtrl" class="col-md-12">
 
-		<div class="col-md-8">
+		<div class="col-md-8 newsContainer">
 
 		<h1>News</h1>
 
-			<div ng-repeat="newsItem in news" style="background-color: gray;" class="shade">
+			<div ng-repeat="newsItem in news" class="newsInstance shade">
+				<span><em>date:</em>{{newsItem.date}}</span>
+				<span><em>time:</em>{{newsItem.time}}</span>
+				<img ng-src="{{newsItem.img}}" style="width: 10%; height: auto;"/>
 				<h1>{{newsItem.title}}</h1>
 				<p>{{newsItem.bodytext}}</p>
-				<span><em>date:</em>{{newsItem.date}}</span>
 			</div>
 
 		</div>
 
-		<div class="col-md-4">
+		<div class="col-md-4 eventsContainer">
 
 		<h1>Events</h1>
 
-			<div ng-repeat="newsItem in news" style="background-color: gray;">
-				<h1>{{newsItem.title}}</h1>
-				<p>{{newsItem.bodytext}}</p>
-				<span><em>date:</em>{{newsItem.date}}</span>
+			<div class="eventFilter">
+				<ul>
+					<li ng-repeat="monthItem in months" ng-click="monthChange(monthItem.month); select($index)" ng-class="{lit: $index == selected}">{{monthItem.abrev}}</li>
+				</ul>
+			</div>
+
+			<p id="eventMsg">{{eventMessage}}</p>
+
+			<div ng-repeat="event in events | filter:monthFilter" class="eventInstance shade">
+				<img ng-src="{{event.img}}"  style="width: 10%; height: auto;"/>
+				<h1>{{event.title}}</h1>
+				<p>{{event.bodytext}}</p>
+				<p>{{event.month}}</p>
+				<span><em>date:</em>{{event.date}}</span>
 			</div>
 
 		</div>
