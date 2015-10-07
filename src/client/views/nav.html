@@ -1,8 +1,8 @@
 <div class="navbar navbar-default navbar-static-top" ng-controller="headerCtrl">
 	<div class="navbar-inner">
 		<div class="container">
-			<a href="#home" class="navbar-brand">
-				<img alt="Expleris" class="logo" src="src/client/images/expleris_logo2.jpg" style="width: 25%;" />
+			<a href="#home" class="navbar-brand" style="width: 31%;">
+				<img alt="Expleris" class="logo" src="src/client/images/logo.png" style="width: 100%;" />
 			</a>
 				<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
 					<span class="icon-bar"></span>
@@ -12,7 +12,7 @@
 				<div class="collapse navbar-collapse navHeaderCollapse">
 					<ul class="nav navbar-nav navbar-right">
 						<li ng-class="{ active: isActive('/brands')}" class="dropdown">
-							<a href="#brands" class="dropdown-toggle" data-toggle="dropdown">Portfolio</a>
+							<a href="#brands" class="dropdown-toggle borderSlide" data-toggle="dropdown">Portfolio</a>
 							<ul class="dropdown-menu">
 								<li>
 									<a href="#/brand/{{brand.id}}">
@@ -26,11 +26,10 @@
 								</li>			
 							</ul>
 						</li>
-						<li ng-class="{ active: isActive('/services')}"><a href="#services">Services</a></li>
-						<li ng-class="{ active: isActive('/aboutUs')}"><a href="#aboutUs">Abous Us</a></li>
-						<li ng-class="{ active: isActive('/news')}"><a href="#news">News & Events</a></li>
-						<li ng-class="{ active: isActive('/contactUs')}"><a href="#contactUs">Contact Us</a></li> 
-						<li ng-class="{ active: isActive('/admin')}"><a href="#admin">Admin Panel</a></li>	
+						<li ng-class="{ active: isActive('/services')}"><a href="#services" class="borderSlide">Services</a></li>
+						<li ng-class="{ active: isActive('/aboutUs')}"><a href="#aboutUs" class="borderSlide">Abous Us</a></li>
+						<li ng-class="{ active: isActive('/news')}"><a href="#news" class="borderSlide">News & Events</a></li>
+						<li ng-class="{ active: isActive('/contactUs')}"><a href="#contactUs" class="borderSlide">Contact Us</a></li> 	
 					</ul>
 				</div>
 			</div>

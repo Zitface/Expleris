@@ -18,6 +18,10 @@ Yellows:
 
   #ffa100
 
+Golds:
+  
+  #d9a792
+
 Grays:
 
   #f2f2f2
@@ -55,6 +59,10 @@ html {
   box-shadow: 2px 2px 6px 1px rgba(0,0,0,0.75);
 }
 
+.border-line {
+  border: 1px solid gray;
+}
+
 /* FOOTER STYLES */
 /* Footer positioning */
 
@@ -66,7 +74,7 @@ html {
 }
 
 .footer, .push {
-  height: 328px;
+  height: 258px;
 }
 
 .footer {
@@ -78,18 +86,18 @@ html {
 
 .upperHalf {
   background-color: #1c1c1c;
-  height: 237px;
+  height: 197px;
 }
 
 .lowerHalf {
-  height: 99px;
+  height: 70px;
   color: #80807f;
   background-color: #262626;
 }
 
 .lowerHalf p {
   margin-left: 5%;
-  padding-top: 40px;
+  padding-top: 25px;
 }
 
 .middleStripe {
@@ -122,26 +130,36 @@ html {
   height: auto;
 }
 
-.navbar-nav {
-  margin-right: 10%;
-}
-
 .navbar-nav li a {
- line-height: 71px;
+  margin: 40px 20px;
+  padding: 0;
 }
 
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: #ff1561;
-  background-color: #E0E0E0; /* These lines determines the background color of li elements when interacted with */
+  color: #d9a792;
 }
 
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-  color: #ff1561;
-  background-color: #E0E0E0;
+.borderSlide:after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 0;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
 }
+
+.borderSlide:hover:after {
+  width: 100%;
+  background: #d9a792;
+}
+
+/* overrides Bootstrap*/
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+background-color: white;
+
+  }
 
 .navbar-inner {
   background-color: white;
@@ -151,15 +169,12 @@ html {
   margin-bottom: 0;
 }
 
-.navbar ul li:hover > a {
-  background-color: #E0E0E0;
-}
-
 /* Dropwdown styles */
 
 .dropdown-menu > li > a {
+  margin: ;
   display: inline-block !important;
-  line-height: 40px !important; /* This makes the dropdown menu appear less tall */
+ /* This makes the dropdown menu appear less tall */
 }
 
 .dropdown-menu {
@@ -168,14 +183,13 @@ html {
 }
 
 .dropdown-menu > li > a {
-  background-color: #E0E0E0;
+  margin: 5px;
   color: #333333;
 }
 
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
-  color: #ff1561;
-  background-color: #E0E0E0;
+  color: #d9a792;
 }
 
 .open > ul {
@@ -342,6 +356,11 @@ html {
   border-left: 1px solid #ffa100;
 }
 
+.valueHeadline {
+  margin-top: 50px;
+  text-align: center;
+}
+
 .valueContainer {
   width: 100%;
   text-align: center;
@@ -370,7 +389,54 @@ html {
 
 .newsInstance {
   margin-bottom: 20px;
+  height: 100px; 
 }
+
+  .newsDateTime {
+    height: 100px;
+    background-color: #1c1c1c;
+    color: white;
+  }
+
+  .newsDesc {
+   /* overflow: hidden;
+    text-overflow: ellipsis; */
+    padding: 0;
+    height: 100px;
+    background-color: #e4e4e4;
+  }
+
+  .newsDesc h1 {
+    
+  }
+
+  .newsImg {
+    padding: 0;
+    overflow: hidden;
+    height: 100px;
+  }
+
+  .newsImg img {
+    width: 100%;
+  }
+
+  .newsInfo {
+    text-align: center;
+    color: white;
+    height: 100px;
+    background-color: #80807f;
+  }
+
+  .newsInfo:hover {
+    color: white;
+    height: 100px;
+    background-color: #1c1c1c;
+  }
+
+  .newsInfo h4 {
+    padding-top: 20px;
+  }
+
 
 .eventsContainer {
 
@@ -432,7 +498,8 @@ html {
 }
 
 .topic {
-  height: 460px;
+  overflow: hidden;
+  height: 250px;
   width: 100%;
   background-color: black;
 }

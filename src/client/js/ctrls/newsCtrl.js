@@ -51,7 +51,7 @@
 					}
 				}
 				return event;
-		}
+		}	
 
 		$http.get("src/client/data/news.json")
 				 .then(getNews, getError);
