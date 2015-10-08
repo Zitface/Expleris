@@ -4,21 +4,22 @@
 
 		<div class="col-md-8 newsContainer">
 
-		<h1>News</h1>
+			<h1>News</h1>
 	
-			<div ng-repeat="newsItem in news" class="newsInstance">
+			<div ng-repeat="newsItem in news" class="col-md-12 newsInstance">
 				<div class="col-md-2 newsDateTime">
-					<p><span>{{newsItem.date}}</span></p>
-					<p>{{newsItem.time}}</p>
+					<p>{{newsItem.date}}. {{newsItem.month}}</span></p>
+					<span>{{newsItem.time}}</span>
 				</div>
 				<div class="col-md-5 newsDesc">
-					<h3>{{newsItem.title}}</h3>
-					<p>{{newsItem.bodytext | limitTo: 50}}{{newsItem.bodytext.length > 50 ? '...' : ''}}</p>
+					<h3>{{newsItem.host}}</h3>
+					<h2><a href="">{{newsItem.title}}</a></h2>
+					<p>{{newsItem.bodytext | limitTo: 70}}{{newsItem.bodytext.length > 70 ? '...' : ''}}</p>
 				</div>
 				<div class="col-md-3 newsImg">
 					<img ng-src="{{newsItem.img}}" />
 				</div>
-				<a href="#">
+				<a href="#/news/{{news.id}}">
 				<div class="col-md-2 newsInfo">
 					<h4>Read More</h4>
 				</div>
@@ -29,7 +30,7 @@
 
 		<div class="col-md-4 eventsContainer">
 
-		<h1>Events</h1>
+			<h1>Events</h1>
 
 			<div class="eventFilter">
 				<ul>
@@ -39,12 +40,21 @@
 
 			<p id="eventMsg">{{eventMessage}}</p>
 
-			<div ng-repeat="event in events | filter:monthFilter" class="eventInstance border-line">
-				<img ng-src="{{event.img}}"  style="width: 10%; height: auto;"/>
-				<h1>{{event.title}}</h1>
-				<p>{{event.bodytext}}</p>
-				<p>{{event.month}}</p>
-				<span><em>date:</em>{{event.date}}</span>
+			<div ng-repeat="event in events | filter:monthFilter" class="eventInstance border-line col-md-10">
+				<div class="col-md-12 eventImg">
+					<img ng-src="{{event.img}}"  style="width: 100%; height: auto;"/>
+				</div>
+				<div>
+					<h1>{{event.title}}</h1>
+					<p>{{event.bodytext}}</p>
+				</div>
+				<div>
+					<h4>Read More</h4>
+				</div>
+				<div>
+					<p>{{event.month}}</p>
+					<span><em>date:</em>{{event.date}}</span>
+				</div>
 			</div>
 
 		</div>

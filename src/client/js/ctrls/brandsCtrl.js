@@ -38,7 +38,7 @@
 					}
 			}
 
-			//The 'selected' function below adds a class (sel) to the category clicked.
+			//The 'select' function below adds a class (sel) to the category clicked.
 
 			$scope.selected = -1;
 

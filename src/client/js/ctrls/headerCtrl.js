@@ -6,6 +6,7 @@
 		.controller("headerCtrl", headerCtrl);
 
 	function headerCtrl($scope, $location, $http){
+		
 		$scope.isActive = function (viewLocation) { 
         	return viewLocation === $location.path();
    		}
