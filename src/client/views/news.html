@@ -1,18 +1,21 @@
+<div class="topic">
+ <img src="src/client/images/nature.jpg" style="width: 100%;" />
+</div>
+
 <div class="container" ng-controller="newsCtrl">
 
 	<div ng-controller="newsCtrl" class="col-md-12">
 
 		<div class="col-md-8 newsContainer">
 
-			<h1>News</h1>
+			<h2 style="text-align: center;">News</h2>
 	
 			<div ng-repeat="newsItem in news" class="col-md-12 newsInstance">
 				<div class="col-md-2 newsDateTime">
-					<p>{{newsItem.date}}. {{newsItem.month}}</span></p>
+					<p><b>{{newsItem.date}}. {{newsItem.month}}</b></p>
 					<span>{{newsItem.time}}</span>
 				</div>
 				<div class="col-md-5 newsDesc">
-					<h3>{{newsItem.host}}</h3>
 					<h2><a href="">{{newsItem.title}}</a></h2>
 					<p>{{newsItem.bodytext | limitTo: 70}}{{newsItem.bodytext.length > 70 ? '...' : ''}}</p>
 				</div>
@@ -30,30 +33,33 @@
 
 		<div class="col-md-4 eventsContainer">
 
-			<h1>Events</h1>
+			<h2 style="text-align: center;">Events</h2>
 
 			<div class="eventFilter">
 				<ul>
-					<li ng-repeat="monthItem in months" ng-click="monthChange(monthItem.month); select($index)" ng-class="{lit: $index == selected}">{{monthItem.abrev}}</li>
+					<li ng-repeat="monthItem in months" ng-click="monthChange(monthItem.month); select($index)" ng-class="{lit: $index == selected}">{{monthItem.month}}</li>
 				</ul>
 			</div>
 
 			<p id="eventMsg">{{eventMessage}}</p>
 
-			<div ng-repeat="event in events | filter:monthFilter" class="eventInstance border-line col-md-10">
+			<div ng-repeat="event in events | filter:monthFilter" class="col-md-10 eventInstance">
 				<div class="col-md-12 eventImg">
 					<img ng-src="{{event.img}}"  style="width: 100%; height: auto;"/>
 				</div>
-				<div>
-					<h1>{{event.title}}</h1>
-					<p>{{event.bodytext}}</p>
+				<div class="col-md-12 eventDesc">
+					<h3>{{event.host}}</h3>
+					<a href=""><h2>{{event.title}}</h2></a>
+					<p>{{event.bodytext | limitTo: 60}}{{event.bodytext.length > 60 ? '...' : ''}}</p>
 				</div>
-				<div>
-					<h4>Read More</h4>
+				<a href="#/event/{{event.id}}">
+				<div class="col-md-6 eventInfo">
+					<p>Read More</p>
 				</div>
-				<div>
-					<p>{{event.month}}</p>
-					<span><em>date:</em>{{event.date}}</span>
+				</a>
+				<div class="col-md-6 eventDateTime">
+					<p><b>{{event.month}} {{event.date}}</b> {{event.time}}</p>
+					
 				</div>
 			</div>
 

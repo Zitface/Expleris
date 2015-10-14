@@ -1,50 +1,38 @@
 [
 	{
-		"month": "January",
-		"abrev": "JAN"
+		"month": "Jan"
 	},
 	{
-		"month": "Februrary",
-		"abrev": "FEB"
+		"month": "Feb"
 	},
 	{
-		"month": "March",
-		"abrev": "MAR"
+		"month": "Mar"
 	},
 	{
-		"month": "April",
-		"abrev": "APR"
+		"month": "Apr"
 	},
 	{
-		"month": "May",
-		"abrev": "MAY"
+		"month": "May"
 	},
 	{
-		"month": "June",
-		"abrev": "JUN"
+		"month": "Jun"
 	},
 	{
-		"month": "July",
-		"abrev": "JUL"
+		"month": "Jul"
 	},
 	{
-		"month": "August",
-		"abrev": "AUG"
+		"month": "Aug"
 	},
 	{
-		"month": "September",
-		"abrev": "SEP"
+		"month": "Sep"
 	},
 	{
-		"month": "October",
-		"abrev": "OCT"
+		"month": "Oct"
 	},
 	{
-		"month": "November",
-		"abrev": "NOV"
+		"month": "Nov"
 	},
 	{
-		"month": "December",
-		"abrev": "DEC"
+		"month": "Dec"
 	}
 ]

@@ -1,42 +1,52 @@
 [
 	{
-		"id": 1,
+		"id": "1",
 		"title": "Workshop",
 		"bodytext": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum",
-		"date": "23-09-2015",
-		"month": "January",
+		"host": "Expleris",
+		"date": "23",
+		"month": "Jan",
+		"time": "17:00",
 		"img": "http://www.dailyperricone.com/wp-content/uploads/2010/08/Super-Foods-505x336.jpg" 
 	},
 	{
-		"id": 2,
+		"id": "2",
 		"title": "Another Event",
 		"bodytext": "Lorem ipsum",
-		"date": "24-09-2015",
-		"month": "Februrary",
+		"host": "Expleris",
+		"date": "24",
+		"month": "Feb",
+		"time": "17:00",
 		"img": "http://www.hannasgourmetcatering.com/publishImages/index~~element43.jpg"
 	},
 	{
-		"id": 3,
+		"id": "3",
 		"title": "Yet Another Event",
 		"bodytext": "Lorem ipsum",
-		"date": "24-09-2015",
-		"month": "March",
+		"host": "Expleris",
+		"date": "24",
+		"month": "Mar",
+		"time": "17:00",
 		"img": "http://www.hannasgourmetcatering.com/publishImages/index~~element43.jpg"
 	},
 	{
-		"id": 4,
+		"id": "4",
 		"title": "Come to this Event!",
 		"bodytext": "Lorem ipsum",
-		"date": "24-09-2015",
-		"month": "April",
+		"host": "Expleris",
+		"date": "24",
+		"month": "Apr",
+		"time": "17:00",
 		"img": "http://www.hannasgourmetcatering.com/publishImages/index~~element43.jpg"
 	},
 	{
-		"id": 5,
+		"id": "5",
 		"title": "Drinking Event",
 		"bodytext": "Lorem ipsum",
-		"date": "24-09-2015",
-		"month": "March",
+		"host": "Expleris",
+		"date": "24",
+		"month": "Mar",
+		"time": "17:00",
 		"img": "http://www.hannasgourmetcatering.com/publishImages/index~~element43.jpg"
 	}
 ]

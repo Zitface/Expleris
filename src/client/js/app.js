@@ -3,7 +3,7 @@
 
 		angular
 			.module("Main",
-					["Main.home", "Main.brands", "Main.brand", "Main.news", 
+					["Main.home", "Main.brands", "Main.brand", "Main.news", "Main.event",
                      "Main.header", "Main.admin", "ngRoute"]
 		 	)
 			.config(function($routeProvider){
@@ -14,9 +14,17 @@
                                 templateUrl: "src/client/views/brands.html",
                                 controller: "brandsCtrl"
                     })
+                    .when('/brand/:id', {
+                                templateUrl: "src/client/views/brand.html",
+                                controller: "brandCtrl"
+                    })
                     .when("/news", {
                                 templateUrl: "src/client/views/news.html",
                                 controller: "newsCtrl"
+                    })
+                    .when('/event/:id', {
+                                templateUrl: "src/client/views/event.html",
+                                controller: "eventCtrl"
                     })
                     .when("/aboutUs", {
                                 templateUrl: "src/client/views/aboutUs.html",
@@ -51,10 +59,6 @@
                     .when("/adminEvents", {
                                 templateUrl: "src/admin/views/adminEvents.html",
                                 controller: "adminCtrl"
-                    })
-                    .when('/brand/:id', {
-                                templateUrl: "src/client/views/brand.html",
-                                controller: "brandCtrl"
                     })
 
                     //Default

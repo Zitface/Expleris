@@ -3,7 +3,6 @@
 		"id": 1,
 		"title": "The New Superfood!",
 		"bodytext": "The recently found folklore suggested that the villagers had discovered a new type of food so healthy that a single course a week would be sufficient",
-		"host": "Expleris",
 		"date": "23",
 		"month": "Jan",
 		"time": "17:00",
@@ -13,7 +12,6 @@
 		"id": 2,
 		"title": "Eplerix: A website revamp",
 		"bodytext": "After browsing tirelessly for several months, the king and his minions were delighted to have found Expleris.com",
-		"host": "Expleris",
 		"date": "23",
 		"month": "Feb",
 		"time": "17:00",
@@ -23,7 +21,6 @@
 		"id": 3,
 		"title": "Birthday coming up",
 		"bodytext": "As the season changed from",
-		"host": "Expleris",
 		"date": "23",
 		"month": "Mar",
 		"time": "17:00",
@@ -33,7 +30,6 @@
 		"id": 3,
 		"title": "A Gaze Into the Abyss",
 		"bodytext": "When first he arrived at the bay, he gazed out into the horizon with a strange, strange sensation of fear flowing through his vains.",
-		"host": "Expleris",
 		"date": "23",
 		"month": "Mar",
 		"time": "17:00",
@@ -43,31 +39,10 @@
 		"id": 3,
 		"title": "League of God",
 		"bodytext": "On the 7th day of the trip, Galio was not longer needed for his services. He strolled on into the chasm, only to find himself amidst a foul and unforgiving environment.",
-		"host": "Expleris",
 		"date": "23",
 		"month": "May",
 		"time": "17:00",
 		"img": "src/client/images/newsimg1.jpg"
-	},
-	{
-		"id": 3,
-		"title": "A Cold, Cold Day",
-		"bodytext": "They had always been prepared for a day like this to come, but never had they imagined it to be this cold.",
-		"host": "Expleris",
-		"date": "23",
-		"month": "Sep",
-		"time": "17:00",
-		"img": "src/client/images/testorganic.png"
-	},
-	{
-		"id": 3,
-		"title": "Zeds Dead Baby",
-		"bodytext": "Butch landed in the driveway, calling for his beloved one. She asked what had occured, and he replied that Zed was now dead.",
-		"host": "Expleris",
-		"date": "23",
-		"month": "Dec",
-		"time": "17:00",
-		"img": "src/client/images/testorganic.png"
 	}
 
 ]
