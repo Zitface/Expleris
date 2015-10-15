@@ -15,12 +15,12 @@
 					<p><b>{{newsItem.date}}. {{newsItem.month}}</b></p>
 					<span>{{newsItem.time}}</span>
 				</div>
-				<div class="col-md-5 newsDesc">
-					<h2><a href="">{{newsItem.title}}</a></h2>
-					<p>{{newsItem.bodytext | limitTo: 70}}{{newsItem.bodytext.length > 70 ? '...' : ''}}</p>
-				</div>
 				<div class="col-md-3 newsImg">
 					<img ng-src="{{newsItem.img}}" />
+				</div>
+				<div class="col-md-5 newsDesc">
+					<h2><a href="">{{newsItem.title | limitTo: 20}}{{newsItem.title.length > 20 ? '...' : ''}}</a></h2>
+					<p>{{newsItem.bodytext | limitTo: 80}}{{newsItem.bodytext.length > 80 ? '...' : ''}}</p>
 				</div>
 				<a href="#/news/{{news.id}}">
 				<div class="col-md-2 newsInfo">
