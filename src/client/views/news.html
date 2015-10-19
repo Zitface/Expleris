@@ -2,9 +2,9 @@
  <img src="src/client/images/nature.jpg" style="width: 100%;" />
 </div>
 
-<div class="container" ng-controller="newsCtrl">
+<div class="container">
 
-	<div ng-controller="newsCtrl" class="col-md-12">
+	<div class="col-md-12">
 
 		<div class="col-md-8 newsContainer">
 
@@ -12,7 +12,7 @@
 	
 			<div ng-repeat="newsItem in news" class="col-md-12 newsInstance">
 				<div class="col-md-2 newsDateTime">
-					<p><b>{{newsItem.date}}. {{newsItem.month}}</b></p>
+					<p class="bold">{{newsItem.date}}. {{newsItem.month}}</p>
 					<span>{{newsItem.time}}</span>
 				</div>
 				<div class="col-md-3 newsImg">
@@ -58,8 +58,7 @@
 				</div>
 				</a>
 				<div class="col-md-6 eventDateTime">
-					<p><b>{{event.month}} {{event.date}}</b> {{event.time}}</p>
-					
+					<p><span class="bold">{{event.month}} {{event.date}}</span> {{event.time}}</p>
 				</div>
 			</div>
 

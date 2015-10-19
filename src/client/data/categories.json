@@ -1,27 +1,24 @@
-[
-	{
-		"id": 1,
-		"category": "Exquisit & Uniqueness",
-		"img": "http://www.dailyperricone.com/wp-content/uploads/2010/08/Super-Foods-505x336.jpg" 
-	},
-	{
-		"id": 2,
-		"category": "Specialty & Gourmet",
-		"img": "http://www.hannasgourmetcatering.com/publishImages/index~~element43.jpg"
-	},
-	{
-		"id": 3,
-		"category": "Healthy & Organic",
-		"img": "src/client/images/testorganic.png"
-	},
-	{
-		"id": 4,
-		"category": "Premium Convenience",
-		"img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Rice_grains_%28IRRI%29.jpg/220px-Rice_grains_%28IRRI%29.jpg"
-	},
-	{
-		"id": 5,
-		"category": "Non-food",
-		"img": "http://www.davidsuzuki.org/issues/assets_c/2010/03/cosmetics%20department-thumb-480xauto-1007.jpg"
-	}
-]
+	
+
+	[
+		{
+			"id": 1,
+			"category": "Exquisit & Uniqueness",
+			"img": "http://www.dailyperricone.com/wp-content/uploads/2010/08/Super-Foods-505x336.jpg" 
+		},
+		{
+			"id": 2,
+			"category": "Specialty & Gourmet",
+			"img": "http://www.hannasgourmetcatering.com/publishImages/index~~element43.jpg"
+		},
+		{
+			"id": 3,
+			"category": "Healthy & Organic",
+			"img": "src/client/images/testorganic.png"
+		},
+		{
+			"id": 4,
+			"category": "Premium Convenience",
+			"img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Rice_grains_%28IRRI%29.jpg/220px-Rice_grains_%28IRRI%29.jpg"
+		}
+	]
