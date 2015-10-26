@@ -1,22 +1,29 @@
-var gulp = require('gulp'),
-	uglify = require('gulp-uglify');
+var gulp      = require('gulp'),
+	gp_uglify = require('gulp-uglify'),
+	gp_concat = require('gulp-concat');
 
 gulp.task('default', ['scripts', 'styles']);
 
 //Scripts: Uglify, ...
 gulp.task('scripts', function(){
 	gulp.src('client/js/*.js')
-	.pipe(uglify())
+	.pipe(gp_uglify())
+	.pipe(gulp.dest('client/minjs'))
+	.pipe(gp_concat())
 	.pipe(gulp.dest('client/minjs'))
 });
 
 //Styles: Uglify, ...
 gulp.task('styles', function(){
-	console.log('Styles task has run');
+	gulp.src('client/css/style.css')
+	.pipe(gp_uglify())
+	.pipe(gulp.dest('client/mincss'))
+	.pipe(gp_concat())
+	.pipe(gulp.dest('client/mincss'))
 });
 
 
 //Watch task: Watches scripts...
 gulp.task('watch', function(){
-	gulp.watch('client/js/*js', ['scripts']);
+	gulp.watch('client/js/*js', 'client/css/style.css', ['scripts','styles']);
 })

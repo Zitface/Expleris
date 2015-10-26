@@ -1,27 +1,16 @@
-
 <div class="topic">
  <img src="src/client/images/nature.jpg" style="width: 100%;" />
 </div>
 
 <div class="container">
 
-<h1>Portfolio</h1>
+<h1>Food & Beverages</h1>
 <p>Welcome to our Brands Portfolio. Use the categories below to filter the brands.</p>
-
-		<p>{{error}}</p>
-		  
-			<!--
-			<div class="searchBrand">
-				<div class="input-group">
-					<input type="text" class="form-control" placeholder="Search" ng-model="brandName">
-				</div>
-			</div>
-			-->
 
 		<div class="categoriesContainer col-md-12">
 			<ul>
 				<li>
-					<div ng-repeat="cat in categories" class="categoryItem" ng-click="catChange(cat.category); select($index)" ng-class="{sel: $index == selected}">
+					<div ng-repeat="cat in foodCategories" class="categoryItem" ng-click="catChange(cat.category); select($index)" ng-class="{sel: $index == selected}">
 						<p>{{cat.category}}</p>
 						<img style="width: 100%; height: auto;" ng-src="{{cat.img}}" />
 					</div>
@@ -34,4 +23,7 @@
 				<img style="width: 100%; height: auto;" ng-src="{{brand.img}}">
 			</a>
 		</div>
+
 </div>
+
+	<div ng-include src="'src/client/css/jquery-logo-slider-ticker/index.html'"></div>

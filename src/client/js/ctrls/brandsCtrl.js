@@ -12,15 +12,19 @@
 			}
 			
 			var modelCategories = function(data){
-				$scope.categories = data;
+				$scope.foodCategories = data;
 			}	
 
 			var getBrands = function(response){
 				$scope.brands = response.data;
 			}	
 
-			var getCategories = function(response){
-				$scope.categories = response.data;
+			var getFoodCategories = function(response){
+				$scope.foodCategories = response.data;
+			}
+
+			var getNonfoodCategories = function(response){
+				$scope.nonfoodCategories = response.data;
 			}
 
 			var getError = function(reason){
@@ -37,8 +41,6 @@
 						$scope.categoriesSelected.push(category);
 					}
 			}
-
-			//The 'select' function below adds a class (sel) to the category clicked.
 
 			$scope.selected = -1;
 
@@ -58,8 +60,11 @@
 			$http.get("src/client/data/brands.json")
 				 .then(getBrands, getError);
 
-			$http.get("src/client/data/categories.json")
-				 .then(getCategories, getError);
+			$http.get("src/client/data/nonfoodCategories.json")
+				 .then(getNonfoodCategories, getError);
+
+			$http.get("src/client/data/foodCategories.json")
+				 .then(getFoodCategories, getError);
 
 	}
 
