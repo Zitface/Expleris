@@ -22,16 +22,12 @@ app.delete('/api/brand/:id', brand.delete);
 
 app.use('/', router);
 
-//Database and server connection
-mongoose.connect('mongodb://localhost/' + database);
-
 var monCon = mongoose.connection;
-monCon.on('error', console.error);
-monCon.once('open', startServer);
 
-function startServer(){
-	var server = app.listen(4000, function () {
-		var port = server.address().port;
-		console.log('Listening hard on port ' + port);
-	});
-};
+//Database and server connection
+mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/' + database);
+
+var port = process.env.PORT || 3000;
+app.listen(port, function() {
+console.log("Listening on " + port);
+});
