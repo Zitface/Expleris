@@ -431,6 +431,10 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   font-family: MyriadProBold;
 }
 
+.homeBox a {
+  display: block;
+}
+
 /* CATEGORIES PAGE STYLES */
 
 .categoryTitle {
