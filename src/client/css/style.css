@@ -94,35 +94,22 @@ a {
 }
 
 /* FOOTER STYLES */
-/* Footer positioning */
-
-#wrapper {
-	min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  margin: 0 auto -200px;
-}
-
-.footer, .push {
-  height: 258px;
-}
-
-.footer {
-  background-repeat: repeat;
-}
-
 /* Footer design */
 
+.footer {
+  bottom: 0px;
+}
+
 .footerTop {
-  background-color: #1c1c1c;
-  height: 197px;
+  background-color: #101010;
+  height: 120px;
   color: white;
 }
 
   .footerContact {
     padding: 0;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 15px;
   }
 
   .footerContact p a {
@@ -138,7 +125,7 @@ a {
     padding: 0;
     text-align: center;
     margin-left: 17%;
-    margin-top: 30px;
+    margin-top: 15px;
   }
 
   .socialMedia ul {
@@ -173,14 +160,14 @@ a {
   }
 
 .footerBottom {
-  height: 70px;
+  height: 50px;
   color: #80807f;
-  background-color: #262626;
+  background-color: #161617;
 }
 
 .footerBottom p {
   text-align: center;
-  padding-top: 25px;
+  padding-top: 15px;
 }
 
 .middleStripe {
@@ -399,11 +386,11 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 }
 
 .homeBox {
-  filter: saturate(20%);
-  -webkit-filter: saturate(20%);
-  -moz-filter: saturate(20%);
-  -o-filter: saturate(20%);
-  -ms-filter: saturate(20%);
+  filter: saturate(40%);
+  -webkit-filter: saturate(40%);
+  -moz-filter: saturate(40%);
+  -o-filter: saturate(40%);
+  -ms-filter: saturate(40%);
 
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -414,11 +401,11 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 }
 
 .homeBox:hover {
-  filter: saturate(130%);
-  -webkit-filter: saturate(130%);
-  -moz-filter: saturate(130%);
-  -o-filter: saturate(130%);
-  -ms-filter: saturate(130%);
+  filter: saturate(110%);
+  -webkit-filter: saturate(110%);
+  -moz-filter: saturate(110%);
+  -o-filter: saturate(110%);
+  -ms-filter: saturate(110%);
 
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -437,47 +424,52 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 
 /* CATEGORIES PAGE STYLES */
 
-.categoryTitle {
-  text-transform: uppercase;
-  height: 70px;
-  background-color: #1c1c1c;
-  text-align: center;
+.outer {
   color: white;
+  height: 300px;
+  width: 100%;
+  text-align: center;
 }
 
 .categoryIntro {
-  height: 300px;
-  width: 40%;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
 }
 
 .categoryIntro h1 {
-  margin-top: 100px;
+  font-family: MyriadProBold;
+  padding-top: 60px;
+  padding-bottom: 20px;
+  margin: 0;
+  color: #d9a792;
 }
 
 .categoryIntro p {
-  font-size: 12pt;
+  text-align:center;
+  font-size: 11pt;
+  padding-bottom: 0px;
+}
+
+.categoryTitle {
+  color: white;
+  padding-top: 15px;
+  height: 70px; 
+  border-top: 1px solid #262626;
 }
 
 .categoryContainer {
+  text-align: center;
   height: 400px;
-  overflow: hidden;
 }
 
 .categoryImg {
   height: 400px;
-}
-
-.categoryImg img {
-  width: 100%;
+  overflow: hidden;
 }
 
 .categoryDesc {
-   text-align: center;
-   width:100%;
-   height:100%;
+   width: 100%;
+   height:400px;
    visibility: hidden;
     position:absolute;
     top:0px;
@@ -492,7 +484,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 
 .food:hover .categoryDesc {
   visibility: visible;
-  background-color: rgba(0,0,0,0.75);
+  background-color: rgba(0,0,0,0.85);
   color: white;
 
   -webkit-transition: all 0.3s ease-in-out;
@@ -563,18 +555,21 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   margin-top: 8%;
 }
 
+.coreValues h1 {
+  color: #d9a792;
+}
+
 .contentWrapper {
-  height: 400px;
-  padding-top: 120px;
+  height: 300px;
+  padding-top: 65px;
   text-align: center;
 }
 
 .valueContainer {
   width: 100%;
-  height: 450px;
+  height: 390px;
   text-align: center;
-  margin-bottom: 50px;
-  padding-top: 95px;
+  padding-top: 55px;
 }
 
 .value {
@@ -790,6 +785,12 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   height: 250px;
   width: 100%;
   background-color: black;
+}
+
+.topicCat {
+  background-image: url('../images/darkened.png');
+  background-repeat: no-repeat;
+  height: 700px;
 }
 
 .contactContainer {
