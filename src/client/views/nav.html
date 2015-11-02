@@ -1,18 +1,22 @@
 <div class="navbar navbar-default navbar-static-top" ng-controller="headerCtrl">
+	
 	<div class="navbar-inner">
+		
 		<div class="container">
+			
 			<a href="#home" class="navbar-brand" style="width: 31%;">
-				<img alt="Expleris" class="logo" src="src/client/images/logo.png" style="width: 100%;" />
+				<img class="logo" src="src/client/images/logo.png" alt="Expleris" />
 			</a>
 				<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
+				
 				<div class="collapse navbar-collapse navHeaderCollapse">
 					<ul class="nav navbar-nav navbar-right">
-						<li ng-class="{ active: isActive('/aboutUs')}"><a href="#aboutUs" class="borderSlide">Who We Are</a></li>
-						<li ng-class="{ active: isActive('/services')}"><a href="#services" class="borderSlide">Why Us</a></li>						
+						<li ng-class="{active: isActive('/aboutUs')}"><a href="#aboutUs" class="borderSlide">Who We Are</a></li>
+						<li ng-class="{active: isActive('/services')}"><a href="#services" class="borderSlide">Why Us</a></li>						
 						<li ng-class="{ active: isActive('/categories')}" class="dropdown">
 							<a href="#categories" class="dropdown-toggle borderSlide">Portfolio</a>
 							<ul class="dropdown-menu">
@@ -24,11 +28,16 @@
 								</li>			
 							</ul>
 						</li>
-						<li ng-class="{ active: isActive('/news')}"><a href="#news" class="borderSlide">News & Events</a></li>
-						<li ng-class="{ active: isActive('/contactUs')}"><a href="#contactUs" class="borderSlide">Contact</a></li> 	
+						<li ng-class="{active: isActive('/news')}"><a href="#news" class="borderSlide">News & Events</a></li>
+						<li ng-class="{active: isActive('/contactUs')}"><a href="#contactUs" class="borderSlide">Contact</a></li> 	
 					</ul>
+
 				</div>
+
 			</div>
+
 		</div>
+
 	</div>
+
 </div>

@@ -1,9 +1,10 @@
 (function(){
+
 	"use strict";
 
 	var adminService = function($http, $rootScope){
 
-		var getError = function(reason) {
+		var getError = function(reason){
 			$rootScope.error = "Something went wrong with the data!";
 		}
 

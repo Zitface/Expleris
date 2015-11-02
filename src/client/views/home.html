@@ -1,5 +1,7 @@
 <div id="myCarousel" class="carousel slide">
+
 <!-- Indicators -->
+   
     <div class="indicators">		
       	 <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -7,7 +9,9 @@
             <li data-target="#myCarousel" data-slide-to="2"></li>
         </ol>
     </div>
+
 <!-- Wrapper for slides -->
+   
     <div class="carousel-inner">
         <div class="item active">
             <div class="fill" style="background-image:url('src/client/images/banner0.jpg');"></div>
@@ -16,7 +20,22 @@
             <div class="fill" style="background-image:url('src/client/images/banner1.jpg');"></div>
         </div>
         <div class="item">
-            <div class="fill" style="background-image:url('src/client/images/banner2.jpg');"></div>
+            <div class="fill" style="background-image:url('src/client/images/banner2.jpg');">
+                <a href="#services">
+                    <div style="background: rgba(0, 0, 0, 0.7); width: 500px; height: 60px; position: absolute; left: 0px; top: 100px;">
+                        <h1 style="color: white; text-align:right; margin-right: 10px; font-size: 40pt; text-transform: uppercase; margin-top: 0; margin-bottom: 0;">A Guided Venture</h1>
+                    </div>
+                    <div style="background: rgba(0, 0, 0, 0.7); width: 400px; height: 60px; position: absolute; left: 0px; top: 180px;">
+                        <h1 style="color: white; text-align:right; margin-right: 10px; font-size: 40pt; text-transform: uppercase; margin-top: 0; margin-bottom: 0;">With Expleris</h1>
+                    </div>
+                    <div style="background: white; width: 285px; height: 30px; position: absolute; left: 20px; top: 260px;">
+                        <h1 style="color: #262626; text-align:left; margin-left: 5px; font-size: 20pt; text-transform: uppercase; margin-top: 0; margin-bottom: 0;"><em>Introducing a better</em></h1>
+                    </div>
+                    <div style="background: white; width: 125px; height: 30px; position: absolute; left: 20px; top: 290px;">
+                        <h1 style="color: #262626; text-align:left; margin-left: 5px; font-size: 20pt; text-transform: uppercase; margin-top: 0; margin-bottom: 0;"><em>lifestyle</em></h1>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
     <a class="left carousel-control" data-target="#myCarousel" data-slide="prev">
@@ -26,38 +45,55 @@
         <span class="icon-next"></span>
     </a>
 </div>
+
 <!-- Main Content -->
 
 <div class="container">
+
     <div class="col-md-12 boxContainer">
+       
         <div class="col-md-4 homeBox">
+           
             <div class="circular">
-                <img src="src/client/images/expleris.jpeg">
-            </div>    
-            <h3>Why Expleris</h3>
-            <p>Provides best customers’ experience through a high end complementary product portfolio.
-               Enhancing value creation to all our supply chain partners. <h5><a ng-href="#services">Read more</a></h5>
-            </p>
-        </div>
-         <div class="col-md-4 homeBox borderLine">
-            <div class="circular">
-                <img src="src/client/images/lifestyle.jpeg">
+
+                <img src="src/client/images/expleris1.jpeg" alt="why expleris" />
+
             </div>
-            <h3>Nordic Values</h3>
-            <p>Home of Michelin starred restaurants!
-                Passionate artisan, skilled craftsmanship, heritage and authenticity 
-                Quality you can trust. <h5><a ng-href="#services">Read more</a></h5>
-            </p>
+
+            <h3 class="bold">Expleris</h3>
+            <p>Provides best customers’ experience through a high end complementary product portfolio. Enhancing value creation to all our supply chain partners.</p>
+            <a ng-href="#services"><h5>Read more</h5></a>
+            
         </div>
-         <div class="col-md-4 homeBox">         
+
+        <div class="col-md-4 homeBox borderLine">
+          
             <div class="circular">
-                <img src="src/client/images/venture.jpeg">
-            </div>       
-            <h3>The Lifestyle</h3>
-            <p>Joining forces to fulfill successful ventures
-               Venturing with a likeminded purpose
-               Embracing new opportunities. Extra text extra text extra text <h5><a ng-href="#services">Read more</a></h5>
-            </p>
+               
+                <img src="src/client/images/lifestyle.jpeg" alt="nordic values" />
+            
+            </div>
+            
+            <h3 class="bold">Nordic Values</h3>
+            <p>Home of Michelin starred restaurants! Passionate artisan, skilled craftsmanship, heritage and authenticity Quality you can trust.</p> 
+            <a ng-href="#services"><h5>Read more</h5></a>
+            
         </div>
+
+         <div class="col-md-4 homeBox">         
+           
+            <div class="circular">
+              
+                <img src="src/client/images/venture.jpeg" alt="a guided venture" />
+            
+            </div>       
+            
+            <h3 class="bold">A Guided Venture</h3>
+            <p>Joining forces to fulfill successful ventures Venturing with a likeminded purpose Embracing new opportunities. Extra text extra text extra text</p>
+            <a ng-href="#services"><h5>Read more</h5></a>          
+        
+        </div>
+    
     </div>
+
 </div>

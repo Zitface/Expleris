@@ -1,10 +1,13 @@
 <div class="topic">
- <img src="src/client/images/nature.jpg" style="width: 100%;" />
+	
+	<img src="src/client/images/nature.jpg" alt="foods and beverages" />
+
 </div>
 
 <div class="container">
 
 <h1>Food & Beverages</h1>
+
 <p>Welcome to our Brands Portfolio. Use the categories below to filter the brands.</p>
 
 		<div class="categoriesContainer col-md-12">
@@ -12,7 +15,7 @@
 				<li>
 					<div ng-repeat="cat in foodCategories" class="categoryItem" ng-click="catChange(cat.category); select($index)" ng-class="{sel: $index == selected}">
 						<p>{{cat.category}}</p>
-						<img style="width: 100%; height: auto;" ng-src="{{cat.img}}" />
+						<img style="width: 100%; height: auto;" ng-src="{{cat.img}}" alt="category image" />
 					</div>
 				</li>
 			</ul>
@@ -20,7 +23,7 @@
 
 		<div class="brandsContainer" ng-repeat="brand in brands | filter:brandName | filter:catFilter">
 			<a href="#/brand/{{brand.id}}">
-				<img style="width: 100%; height: auto;" ng-src="{{brand.img}}">
+				<img style="width: 100%; height: auto;" ng-src="{{brand.img}}" alt="brand image">
 			</a>
 		</div>
 

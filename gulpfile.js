@@ -22,7 +22,6 @@ gulp.task('styles', function(){
 	.pipe(gulp.dest('client/mincss'))
 });
 
-
 //Watch task: Watches scripts...
 gulp.task('watch', function(){
 	gulp.watch('client/js/*js', 'client/css/style.css', ['scripts','styles']);

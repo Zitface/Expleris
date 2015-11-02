@@ -1,4 +1,5 @@
 (function(){
+	
 	"use strict";
 
 	var brandsService = function($http, $rootScope){
