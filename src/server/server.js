@@ -23,7 +23,7 @@ app.delete('/api/brand/:id', brand.delete);
 app.use('/', router);
 
 //Database and server connection
-mongoose.connect('mongodb://localhost/' + database);
+mongoose.connect('mongodb://zitface:123ettotre@ds047114.mongolab.com:47114/heroku_pw01d4f1');
 
 var monCon = mongoose.connection;
 monCon.on('error', console.error);
