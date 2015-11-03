@@ -871,15 +871,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00898989', e
 }
 
 .chinaContainer {
-  background-color: #1c1c1c;
-  color: white;
-  padding: 0;
   height: 400px;
 }
 
-.denmarkContainer {
-  padding: 0;
+#chinaMap {
+  width: 400px;
   height: 400px;
+}
+
+#denmarkMap {
+  height: 400px;
+  width: 400px;
+  float: right;
 }
 
 .map {
@@ -895,10 +898,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00898989', e
   .overlay {
     background:transparent; 
     position:relative; 
-    width:100%;
+    width:400px;
     height:400px; /* your iframe height */
     top:400px;  /* your iframe height */
     margin-top:-400px;  /* your iframe height */
+    z-index: 1;
 }
 
 .contactBox {

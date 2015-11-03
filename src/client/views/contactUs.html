@@ -6,37 +6,32 @@
 
 <div class="contactContainer">
 
-    <div class="chinaContainer">
-      
-        <div class="col-md-6 map1">
-
-            <div class="overlay" onClick="style.pointerEvents='none'"></div>
-
-            <iframe class="googlemap" src="http://regiohelden.de/google-maps/map_en.php?hl=en&amp;q=Kung%20Yip%20Street%20Kwai%20Chung%2C%20NT%20Hong%20Kong+(Hong%20Kong%20Office)&amp;ie=UTF8&amp;t=&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
-      
-        </div> 
-
-        <div class="col-md-6 contactBox">
-
-            <div class="contactInfo">
-
-                <h3>Office in China</h3>
-                <p>Flat 12, 23/F</br>Wah Fat Industrial Building No 10-14, </br> Kung Yip Street Kwai Chung, NT, Hongkong.</p>
-                <h4>Blahbahl@gmail.com</h4> 
-              
-            </div>
-
-        </div>      
-
-    </div>
-
     <div class="denmarkContainer">
 
         <div class="col-md-6 map">
 
             <div class="overlay" onClick="style.pointerEvents='none'"></div>
           
-            <iframe class="googlemap" src="http://regiohelden.de/google-maps/map_en.php?hl=en&amp;q=M%C3%B8llevangs%20Alle%20142%2C%208200%20Aarhus%20N%20Denmark+(Danish%20Office)&amp;ie=UTF8&amp;t=&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+            <script type="text/javascript">
+
+                (function initialize() {
+                    var styles = [{"elementType":"geometry","stylers":[{"hue":"#ff4400"},{"saturation":-68},{"lightness":-4},{"gamma":0.72}]},{"featureType":"road","elementType":"labels.icon"},{"featureType":"landscape.man_made","elementType":"geometry","stylers":[{"hue":"#0077ff"},{"gamma":3.1}]},{"featureType":"water","stylers":[{"hue":"#00ccff"},{"gamma":0.44},{"saturation":-33}]},{"featureType":"poi.park","stylers":[{"hue":"#44ff00"},{"saturation":-23}]},{"featureType":"water","elementType":"labels.text.fill","stylers":[{"hue":"#007fff"},{"gamma":0.77},{"saturation":65},{"lightness":99}]},{"featureType":"water","elementType":"labels.text.stroke","stylers":[{"gamma":0.11},{"weight":5.6},{"saturation":99},{"hue":"#0091ff"},{"lightness":-86}]},{"featureType":"transit.line","elementType":"geometry","stylers":[{"lightness":-48},{"hue":"#ff5e00"},{"gamma":1.2},{"saturation":-23}]},{"featureType":"transit","elementType":"labels.text.stroke","stylers":[{"saturation":-64},{"hue":"#ff9100"},{"lightness":16},{"gamma":0.47},{"weight":2.7}]}];
+                    var myLatLon = {lat: 56.171, lng: 10.185};
+                    var mapOptions = {
+                      center: myLatLon,
+                      zoom: 16,
+                      mapTypeId: google.maps.MapTypeId.ROADMAP,
+                      styles: styles
+                    };
+                    var map = new google.maps.Map(document.getElementById("denmarkMap"),
+                        mapOptions);
+                }());
+               
+
+            </script>
+
+            <div id="denmarkMap"></div>
+
 
         </div>
 
@@ -51,6 +46,48 @@
             </div>
         
         </div>  
+
+    </div>
+
+    <div class="chinaContainer">
+      
+        <div class="col-md-6 map1">
+
+            <div class="overlay" onClick="style.pointerEvents='none'"></div>
+
+            <script type="text/javascript">
+
+                (function initialize() {
+                    var styles = [{"elementType":"geometry","stylers":[{"hue":"#ff4400"},{"saturation":-68},{"lightness":-4},{"gamma":0.72}]},{"featureType":"road","elementType":"labels.icon"},{"featureType":"landscape.man_made","elementType":"geometry","stylers":[{"hue":"#0077ff"},{"gamma":3.1}]},{"featureType":"water","stylers":[{"hue":"#00ccff"},{"gamma":0.44},{"saturation":-33}]},{"featureType":"poi.park","stylers":[{"hue":"#44ff00"},{"saturation":-23}]},{"featureType":"water","elementType":"labels.text.fill","stylers":[{"hue":"#007fff"},{"gamma":0.77},{"saturation":65},{"lightness":99}]},{"featureType":"water","elementType":"labels.text.stroke","stylers":[{"gamma":0.11},{"weight":5.6},{"saturation":99},{"hue":"#0091ff"},{"lightness":-86}]},{"featureType":"transit.line","elementType":"geometry","stylers":[{"lightness":-48},{"hue":"#ff5e00"},{"gamma":1.2},{"saturation":-23}]},{"featureType":"transit","elementType":"labels.text.stroke","stylers":[{"saturation":-64},{"hue":"#ff9100"},{"lightness":16},{"gamma":0.47},{"weight":2.7}]}];
+                    var myLatLon = {lat: 22.361, lng: 114.135};
+                    var mapOptions = {
+                      center: myLatLon,
+                      zoom: 16,
+                      mapTypeId: google.maps.MapTypeId.ROADMAP,
+                      styles: styles
+                    };
+                    var map = new google.maps.Map(document.getElementById("chinaMap"),
+                        mapOptions);
+                }());
+               
+
+            </script>
+
+            <div id="chinaMap"></div>
+      
+        </div> 
+
+        <div class="col-md-6 contactBox">
+
+            <div class="contactInfo">
+
+                <h3>Office in China</h3>
+                <p>Flat 12, 23/F</br>Wah Fat Industrial Building No 10-14, </br> Kung Yip Street Kwai Chung, NT, Hongkong.</p>
+                <h4>Blahbahl@gmail.com</h4> 
+              
+            </div>
+
+        </div>      
 
     </div>
 
