@@ -6,89 +6,126 @@
 
 <div class="contactContainer">
 
-    <div class="denmarkContainer">
+   
 
-        <div class="col-md-6 map">
+        <div class="col-md-12 contactBox">
+
+            <div class="contactInfo">
+
+                <div class="col-md-2"></div>
+                <div class="col-md-4">
+                    <h3>Office in Denmark</h3>
+                    <h4>Møllevangs Alle 142, 8200 Aarhus N.</h4>
+
+                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-4">
+                    <h3>expleris@gmail.com</h3>
+                    <h3>sales@gmail.com</h3>
+                </div>
+
+            </div>
+        
+        </div> 
+
+        <div class="col-md-12 map">
 
             <div class="overlay" onClick="style.pointerEvents='none'"></div>
           
             <script type="text/javascript">
-
+                var mapDk;
                 (function initialize() {
                     var styles = [{"elementType":"geometry","stylers":[{"hue":"#ff4400"},{"saturation":-68},{"lightness":-4},{"gamma":0.72}]},{"featureType":"road","elementType":"labels.icon"},{"featureType":"landscape.man_made","elementType":"geometry","stylers":[{"hue":"#0077ff"},{"gamma":3.1}]},{"featureType":"water","stylers":[{"hue":"#00ccff"},{"gamma":0.44},{"saturation":-33}]},{"featureType":"poi.park","stylers":[{"hue":"#44ff00"},{"saturation":-23}]},{"featureType":"water","elementType":"labels.text.fill","stylers":[{"hue":"#007fff"},{"gamma":0.77},{"saturation":65},{"lightness":99}]},{"featureType":"water","elementType":"labels.text.stroke","stylers":[{"gamma":0.11},{"weight":5.6},{"saturation":99},{"hue":"#0091ff"},{"lightness":-86}]},{"featureType":"transit.line","elementType":"geometry","stylers":[{"lightness":-48},{"hue":"#ff5e00"},{"gamma":1.2},{"saturation":-23}]},{"featureType":"transit","elementType":"labels.text.stroke","stylers":[{"saturation":-64},{"hue":"#ff9100"},{"lightness":16},{"gamma":0.47},{"weight":2.7}]}];
-                    var myLatLon = {lat: 56.171, lng: 10.185};
+                    var myLatLng = {lat: 56.171, lng: 10.185};
                     var mapOptions = {
-                      center: myLatLon,
-                      zoom: 16,
+                      center: myLatLng,
+                      zoom: 17,
                       mapTypeId: google.maps.MapTypeId.ROADMAP,
                       styles: styles
                     };
-                    var map = new google.maps.Map(document.getElementById("denmarkMap"),
+                    mapDk = new google.maps.Map(document.getElementById("denmarkMap"),
                         mapOptions);
+                    var marker = new google.maps.Marker({
+                        position: myLatLng,
+                        visible: true,
+                        map: mapDk,
+                        icon: 'src/client/images/marker.png'
+                    });
                 }());
                
-
             </script>
 
             <div id="denmarkMap"></div>
 
-
-        </div>
-
-        <div class="col-md-6 contactBox">
-
-            <div class="contactInfo">
-
-                <h3>Office in Denmark</h3>
-                <p> Møllevangs Alle 142, 8200 Aarhus N</p>     
-                <h4>Blahbahl@gmail.com</h4>
-
-            </div>
-        
-        </div>  
-
-    </div>
-
-    <div class="chinaContainer">
+        </div> 
       
-        <div class="col-md-6 map1">
+         <div class="col-md-12 contactBox" style="background-color: #333; color: white;">
+
+            <div class="col-md-12 contactInfo">
+
+                <div class="col-md-2"></div>
+                <div class="col-md-4">
+                    <h3>Office in China</h3>
+                    <h4>Flat 12, 23/F</br>Wah Fat Industrial Building No 10-14, </br> Kung Yip Street Kwai Chung, NT, Hongkong.</h4>
+                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-4">
+                    <h3>expleris@gmail.com</h3>
+                    <h3>sales@gmail.com</h3>
+                </div>
+
+                  
+              
+            </div>
+
+        </div>      
+
+        <div class="col-md-12 map1">
 
             <div class="overlay" onClick="style.pointerEvents='none'"></div>
 
             <script type="text/javascript">
-
+                var mapCn;
                 (function initialize() {
                     var styles = [{"elementType":"geometry","stylers":[{"hue":"#ff4400"},{"saturation":-68},{"lightness":-4},{"gamma":0.72}]},{"featureType":"road","elementType":"labels.icon"},{"featureType":"landscape.man_made","elementType":"geometry","stylers":[{"hue":"#0077ff"},{"gamma":3.1}]},{"featureType":"water","stylers":[{"hue":"#00ccff"},{"gamma":0.44},{"saturation":-33}]},{"featureType":"poi.park","stylers":[{"hue":"#44ff00"},{"saturation":-23}]},{"featureType":"water","elementType":"labels.text.fill","stylers":[{"hue":"#007fff"},{"gamma":0.77},{"saturation":65},{"lightness":99}]},{"featureType":"water","elementType":"labels.text.stroke","stylers":[{"gamma":0.11},{"weight":5.6},{"saturation":99},{"hue":"#0091ff"},{"lightness":-86}]},{"featureType":"transit.line","elementType":"geometry","stylers":[{"lightness":-48},{"hue":"#ff5e00"},{"gamma":1.2},{"saturation":-23}]},{"featureType":"transit","elementType":"labels.text.stroke","stylers":[{"saturation":-64},{"hue":"#ff9100"},{"lightness":16},{"gamma":0.47},{"weight":2.7}]}];
-                    var myLatLon = {lat: 22.361, lng: 114.135};
+                    var myLatLng = {lat: 22.361, lng: 114.135};
                     var mapOptions = {
-                      center: myLatLon,
-                      zoom: 16,
+                      center: myLatLng,
+                      zoom: 17,
                       mapTypeId: google.maps.MapTypeId.ROADMAP,
                       styles: styles
                     };
-                    var map = new google.maps.Map(document.getElementById("chinaMap"),
+                    mapCn = new google.maps.Map(document.getElementById("chinaMap"),
                         mapOptions);
+                    var marker = new google.maps.Marker({
+                        position: myLatLng,
+                        visible: true,
+                        map: mapCn,
+                        icon: 'src/client/images/marker.png'
+                    });
                 }());
                
-
             </script>
 
             <div id="chinaMap"></div>
       
         </div> 
 
-        <div class="col-md-6 contactBox">
-
-            <div class="contactInfo">
-
-                <h3>Office in China</h3>
-                <p>Flat 12, 23/F</br>Wah Fat Industrial Building No 10-14, </br> Kung Yip Street Kwai Chung, NT, Hongkong.</p>
-                <h4>Blahbahl@gmail.com</h4> 
-              
+    <div class="col-md-12 contactForm">
+        <form>
+            <div class="row"><!-- user name -->
+                <input type="text" name="name" placeholder="Full Name" data-ng-model="" data-ng-minlength="3" required />
             </div>
-
-        </div>      
-
+            <div class="row"><!-- user email -->
+                <input type="text" name="email" placeholder="example@email.com" data-ng-model="" data-ng-minlength="3" required />
+            </div>
+            <div class="row"><!-- user message -->
+                <textarea data-ng-model="" rows="10" id="contactMessage" name="contactMessage" placeholder="Write your message here"></textarea> 
+            </div>
+            <div class="row"><!-- user message -->
+                <input type="submit" data-ng-disabled="submitButtonDisabled" data-ng-click="submitContactForm()"></textarea> 
+            </div>
+        </form>
     </div>
 
 </div>
