@@ -1,9 +1,15 @@
 <div class="container">
+<h4><a ng-href="#news">< News & Events</a></h4>
+	<div class="eventItem col-md-12">
+		<div class="col-md-8">
+			<h3>host: {{event.host}}</h3>
+			<h1>{{event.title}}</h1>
+			<h4>{{event.date}} {{event.month}}</h4>
+			<p>{{event.bodytext}}</p>
+		</div>
+		<div class="col-md-4">
+			<img ng-src="{{event.img}}" />
+		</div>
+	</div>
 
-	<h3>{{event.host}}</h3>
-	<h1>{{event.title}}</h1>
-	<p>{{event.bodytext}}</p>
-	<h4>{{event.date}}</h4>
-	<h4><b>{{event.month}}</b></h4>
-	
 </div>

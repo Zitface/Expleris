@@ -2,21 +2,25 @@
 	{
 		"id": 1,
 		"category": "Exquisit & Uniqueness",
-		"img": "http://www.dailyperricone.com/wp-content/uploads/2010/08/Super-Foods-505x336.jpg" 
+		"desc": "This category has a description. That is kind of nice, although the description has not yet been made.",
+		"img": "src/client/images/categoryImg1.png" 
 	},
 	{
 		"id": 2,
 		"category": "Specialty & Gourmet",
-		"img": "http://www.hannasgourmetcatering.com/publishImages/index~~element43.jpg"
+		"desc": "That is also the case for this category; it has an unfinished description.",
+		"img": "src/client/images/categoryImg2.png"
 	},
 	{
 		"id": 3,
 		"category": "Healthy & Organic",
-		"img": "src/client/images/testorganic.png"
+		"desc": "What is a description anyway? Can't a description be self-descriptive?",
+		"img": "src/client/images/categoryImg3.png"
 	},
 	{
 		"id": 4,
 		"category": "Premium Convenience",
-		"img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Rice_grains_%28IRRI%29.jpg/220px-Rice_grains_%28IRRI%29.jpg"
+		"desc": "I certainly don't know, but i do know that i am having a conversation about descriptions with myself at the moment.",
+		"img": "src/client/images/categoryImg4.png"
 	}
 ]

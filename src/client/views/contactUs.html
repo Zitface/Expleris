@@ -114,13 +114,13 @@
     <div class="col-md-12 contactForm">
         <form>
             <div class="row"><!-- user name -->
-                <input type="text" name="name" placeholder="Full Name" data-ng-model="" data-ng-minlength="3" required />
+                <input type="text" name="name" placeholder="Full Name" onfocus="this.placeholder = ''" data-ng-model="" data-ng-minlength="3" required />
             </div>
             <div class="row"><!-- user email -->
-                <input type="text" name="email" placeholder="example@email.com" data-ng-model="" data-ng-minlength="3" required />
+                <input type="text" name="email" placeholder="example@email.com" onfocus="this.placeholder = ''" data-ng-model="" data-ng-minlength="3" required />
             </div>
             <div class="row"><!-- user message -->
-                <textarea data-ng-model="" rows="10" id="contactMessage" name="contactMessage" placeholder="Write your message here"></textarea> 
+                <textarea data-ng-model="" rows="10" id="contactMessage" onfocus="this.placeholder = ''" name="contactMessage" placeholder="Write your message here"></textarea> 
             </div>
             <div class="row"><!-- user message -->
                 <input value="submit" type="submit" data-ng-disabled="submitButtonDisabled" data-ng-click="submitContactForm()" />

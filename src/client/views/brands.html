@@ -4,29 +4,30 @@
 
 </div>
 
-<div class="container">
+<div class="categoriesBackground">
 
-<h1>Food & Beverages</h1>
+	<div class="container">
 
-<p>Welcome to our Brands Portfolio. Use the categories below to filter the brands.</p>
+		<h2 style="text-align: left; margin-left: 3%;">Food & Beverages</h2>
 
-		<div class="categoriesContainer col-md-12">
+		<div class="categoriesContainer">
 			<ul>
 				<li>
 					<div ng-repeat="cat in foodCategories" class="categoryItem" ng-click="catChange(cat.category); select($index)" ng-class="{sel: $index == selected}">
-						<p>{{cat.category}}</p>
-						<img style="width: 100%; height: auto;" ng-src="{{cat.img}}" alt="category image" />
+						<div class="foodcategoryImg">
+							<img ng-src="{{cat.img}}" alt="category image" />
+						</div>			
+						<h4>{{cat.category}}</h4>
+						<p>{{cat.desc}}</p>
 					</div>
 				</li>
 			</ul>
-		</div>
 
-		<div class="brandsContainer" ng-repeat="brand in brands | filter:brandName | filter:catFilter">
-			<a href="#/brand/{{brand.id}}">
-				<img style="width: 100%; height: auto;" ng-src="{{brand.img}}" alt="brand image">
-			</a>
-		</div>
+			<div class="col-md-12" ng-include src="'src/client/css/jquery-logo-slider-ticker/index.html'"></div>
+		
+		</div>		
+
+	</div>	
 
 </div>
 
-	<div ng-include src="'src/client/css/jquery-logo-slider-ticker/index.html'"></div>
