@@ -32,21 +32,22 @@
                         templateUrl: "src/client/views/newsAndEvents.html",
                         controller: "newsCtrl"
             })
+                .when('/article/:id', {
+                            templateUrl: "src/client/views/article.html",
+                            controller: "eventCtrl"
+                })
                 .when('/event/:id', {
                             templateUrl: "src/client/views/event.html",
                             controller: "eventCtrl"
                 })
             .when("/aboutUs", {
-                        templateUrl: "src/client/views/aboutUs.html",
-                        controller: "aboutUsCtrl"
+                        templateUrl: "src/client/views/aboutUs.html"
             })
             .when("/contactUs", {
-                        templateUrl: "src/client/views/contactUs.html",
-                        controller: "contactUsCtrl"
+                        templateUrl: "src/client/views/contactUs.html"
             })
-            .when("/services", {
-                        templateUrl: "src/client/views/services.html",
-                        controller: "serviceCtrl"
+            .when("/whyUs", {
+                        templateUrl: "src/client/views/whyUs.html"
             })
             .when("/home", {
             			templateUrl: "src/client/views/home.html",

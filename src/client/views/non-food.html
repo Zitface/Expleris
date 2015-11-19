@@ -1,41 +1,33 @@
 <div class="topic">
- 	
- 	<img src="src/client/images/nature.jpg" alt="non-food" />
+	
+	<img src="src/client/images/TopBanner351.jpg" style="width: auto;" alt="foods and beverages" />
 
 </div>
 
-<div class="container">
+<div class="categoriesBackground">
 
-<h1>Portfolio</h1>
-<p>Welcome to our Brands Portfolio. Use the categories below to filter the brands.</p>
-		  
-			<!--
-			<div class="searchBrand">
-				<div class="input-group">
-					<input type="text" class="form-control" placeholder="Search" ng-model="brandName">
-				</div>
-			</div>
-			-->
+	<div class="container">
 
-		<div class="categoriesContainer col-md-12">
+		<h2 style="text-align: left; margin-left: 3%;">Non-food Products</h2>
 
+		<div class="categoriesContainer">
 			<ul>
 				<li>
-					<div ng-repeat="cat in categories" class="categoryItem" ng-click="catChange(cat.category); select($index)" ng-class="{sel: $index == selected}">
-						<p>{{cat.category}}</p>
-						<img style="width: 100%; height: auto;" ng-src="{{cat.img}}" alt="" />
+					<div ng-repeat="cat in nonfoodCategories" class="categoryItem">
+						<div class="foodcategoryImg">
+							<img ng-src="{{cat.img}}" alt="category image" />
+						</div>			
+						<h4>{{cat.category}}</h4>
+						<p>{{cat.desc}}</p>
 					</div>
 				</li>
 			</ul>
 
-		</div>
-
-		<div class="brandsContainer" ng-repeat="brand in brands | filter:brandName | filter:catFilter">
-			
-			<a href="#/brand/{{brand.id}}">
-				<img style="width: 100%; height: auto;" ng-src="{{brand.img}}" alt="" />
-			</a>
+			<div class="col-md-12" ng-include src="'src/client/css/jquery-logo-slider-ticker/index.html'"></div>
 		
-		</div>
+		</div>		
+
+	</div>	
 
 </div>
+

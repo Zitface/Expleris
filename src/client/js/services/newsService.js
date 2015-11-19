@@ -11,6 +11,21 @@
 				}, getError)
 		}
 
+		var getArticle = function(id) {
+			return $http.get("src/client/data/news.json")
+						.then(function(response){
+							return findArticleInArray(response.data, id);
+						})
+		}
+
+		var findArticleInArray = function(data, id){
+			return data.filter(function(element){
+				if(element.id === id){
+					return element;
+				}
+			});
+		}
+
 		var getEvents = function() {
 			return $http.get("/api/events")
 				.then(function(response){
@@ -47,8 +62,9 @@
 
 		return {
 			getNews  : getNews,
+			getArticle   : getArticle,
 			getEvents: getEvents,
-			getEvent:  getEvent, 
+			getEvent : getEvent, 
 			getMonths: getMonths
 		}
 	}

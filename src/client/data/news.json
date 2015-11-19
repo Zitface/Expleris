@@ -1,6 +1,6 @@
 [
 	{
-		"id": 1,
+		"id": "1",
 		"title": "The New Superfood!",
 		"bodytext": "The recently found folklore suggested that the villagers had discovered a new type of food so healthy that a single course a week would be sufficient",
 		"date": "23",
@@ -9,7 +9,7 @@
 		"img": "http://www.dailyperricone.com/wp-content/uploads/2010/08/Super-Foods-505x336.jpg" 
 	},
 	{
-		"id": 2,
+		"id": "2",
 		"title": "Eplerix: A website revamp",
 		"bodytext": "After browsing tirelessly for several months, the king and his minions were delighted to have found Expleris.com",
 		"date": "23",
@@ -18,7 +18,7 @@
 		"img": "http://www.hannasgourmetcatering.com/publishImages/index~~element43.jpg"
 	},
 	{
-		"id": 3,
+		"id": "3",
 		"title": "Birthday coming up",
 		"bodytext": "As the season changed from",
 		"date": "23",
@@ -27,7 +27,7 @@
 		"img": "src/client/images/newsimg1.jpg"
 	},
 	{
-		"id": 3,
+		"id": "4",
 		"title": "A Gaze Into the Abyss",
 		"bodytext": "When first he arrived at the bay, he gazed out into the horizon with a strange, strange sensation of fear flowing through his vains.",
 		"date": "23",
@@ -36,7 +36,7 @@
 		"img": "src/client/images/newsimg2.jpg"
 	},
 	{
-		"id": 3,
+		"id": "5",
 		"title": "League of God",
 		"bodytext": "On the 7th day of the trip, Galio was not longer needed for his services. He strolled on into the chasm, only to find himself amidst a foul and unforgiving environment.",
 		"date": "23",

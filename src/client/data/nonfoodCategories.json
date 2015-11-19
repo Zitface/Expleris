@@ -1,0 +1,14 @@
+[
+	{
+		"id": "1",
+		"category": "Home",
+		"desc": "This category has a description. That is kind of nice, although the description has not yet been made.",
+		"img": "src/client/images/home.jpeg" 
+	},
+	{
+		"id": "2",
+		"category": "Personal Care",
+		"desc": "That is also the case for this category; it has an unfinished description.",
+		"img": "src/client/images/PersonalCare.jpg"
+	}
+]

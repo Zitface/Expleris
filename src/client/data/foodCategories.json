@@ -2,25 +2,25 @@
 	{
 		"id": 1,
 		"category": "Exquisit & Uniqueness",
-		"desc": "This category has a description. That is kind of nice, although the description has not yet been made.",
-		"img": "src/client/images/categoryImg1.png" 
+		"desc": "The finest and rarest products for special occasions! Here you will find some of our most exclusive coffees.",
+		"img": "src/client/images/ExquisitUnique.jpeg" 
 	},
 	{
 		"id": 2,
 		"category": "Specialty & Gourmet",
-		"desc": "That is also the case for this category; it has an unfinished description.",
-		"img": "src/client/images/categoryImg2.png"
+		"desc": "Products for the demanding connoisseurs with a sophisticated and refined palate.",
+		"img": "src/client/images/SpecialtyGourmet.jpeg"
 	},
 	{
 		"id": 3,
 		"category": "Healthy & Organic",
-		"desc": "What is a description anyway? Can't a description be self-descriptive?",
-		"img": "src/client/images/categoryImg3.png"
+		"desc": "Selected super foods for healthy and organic lifestyles. Products in this category include vegan and gluten free foods.",
+		"img": "src/client/images/HealthyOrganic.jpeg"
 	},
 	{
 		"id": 4,
 		"category": "Premium Convenience",
-		"desc": "I certainly don't know, but i do know that i am having a conversation about descriptions with myself at the moment.",
-		"img": "src/client/images/categoryImg4.png"
+		"desc": "Products for the modern and busy metropolitans. Snack on the go or have a quick healthy meal!",
+		"img": "src/client/images/PremiumConvenient.jpeg"
 	}
 ]

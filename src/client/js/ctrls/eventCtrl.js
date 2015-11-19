@@ -12,8 +12,15 @@
 			$scope.event = eventArray[0];
 		}
 
+		var modelArticle = function(newArray){
+			$scope.news = newArray[0];
+		}
+
 		newsService.getEvent($routeParams.id)
 			.then(modelEvent);
+
+		newsService.getArticle($routeParams.id)
+			.then(modelArticle);
 
 	}   
 
