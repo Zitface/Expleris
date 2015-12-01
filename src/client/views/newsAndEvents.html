@@ -1,10 +1,8 @@
 <div class="topic">
 	
-	<img src="src/client/images/ForJonasS.jpg" alt="news and events" />
+	<img src="src/client/images/TopBanner.jpg" alt="news and events" />
 
 </div>
-
-<div class="row">
 
 <div class="container">
 
@@ -55,7 +53,6 @@
 			<h2 style="text-align: left;">Events</h2>
 
 			<div class="eventFilter col-md-12">
-				<p style="text-align: left;">Select a month to filter the events:</p>
 				<ul>
 					<li ng-repeat="monthItem in months" ng-click="monthChange(monthItem.month); select($index)" ng-class="{lit: $index == selected}">{{monthItem.month}}</li>
 				</ul>
@@ -101,7 +98,5 @@
 		</div>
 
 	</div>
-
-</div>
 
 </div>

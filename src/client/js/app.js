@@ -16,12 +16,12 @@
                         templateUrl: "src/client/views/categories.html",
                         controller: "brandsCtrl"
             })
-                .when("/non-food", {
+                .when("/nonfood", {
                             templateUrl: "src/client/views/non-food.html",
                             controller: "brandsCtrl"
                 })
     	        .when("/brands", {
-                            templateUrl: "src/client/views/brands.html",
+                            templateUrl: "src/client/views/foods.html",
                             controller: "brandsCtrl"
                 })
                     .when('/brand/:id', {
