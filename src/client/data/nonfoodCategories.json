@@ -2,13 +2,13 @@
 	{
 		"id": "1",
 		"category": "Home",
-		"desc": "This category has a description. That is kind of nice, although the description has not yet been made.",
-		"img": "src/client/images/home.jpeg" 
+		"desc": "Lorem Ipsum But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born.",
+		"img": "src/client/images/home.png" 
 	},
 	{
 		"id": "2",
 		"category": "Personal Care",
-		"desc": "That is also the case for this category; it has an unfinished description.",
+		"desc": "Lorem Ipsum and I will give you a complete account of the system, and expound.",
 		"img": "src/client/images/PersonalCare.jpg"
 	}
 ]

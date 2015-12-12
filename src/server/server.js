@@ -32,6 +32,6 @@ monCon.once('open', startServer);
 function startServer(){
 	var server = app.listen(4000, function () {
 		var port = server.address().port;
-		console.log('Listening hard on port ' + port);
+		console.log('Listening on port ' + port);
 	});
 };
