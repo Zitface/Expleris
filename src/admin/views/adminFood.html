@@ -1,0 +1,39 @@
+<div class="well container"> 
+
+    <h2 style="text-align: left;">Foods & Beverages Categories</h2>
+    
+    <table class="table table-bordered table-stripped">
+        <tr>  
+            <th>Category Name</th>
+            <th>Category Description</th>
+            <th>Category Image</th>
+        </tr>
+        <tr>
+            <td><input type="text" ng-model="food.name" placeholder="Category Name"></td>
+            <td><input type="text" ng-model="food.description" placeholder="Category Description"></td>
+            <td><input type="text" ng-model="food.img" placeholder="Provide Image link"></td>
+            <td><button class="btn btn-success" ng-click="createFood()">Create Category</td>
+            <td><button class="btn btn-primary" ng-click="updateFood()">Update</td>
+        </tr>
+    </table>
+
+    <h3 style="text-align: left;">Currently stored in the database:</h3>
+    
+    <table class="table table-bordered table-stripped">
+        <th>Name</th>
+        <th>Description</th>
+        <th>Image</th>
+        <th>Delete</th>
+        <th>Edit</th>
+        <tr ng-repeat="food in foods" style="overflow: hidden;">          
+            <td>{{food.name}}</td>
+            <td>{{food.description}}</td>
+            <td><img style="width: 25%; height: auto;" ng-src="{{ food.img }}"></td>
+            <td><button ng-click="delFood(food._id)" class="btn btn-danger">Delete</button></td>  
+            <td><button ng-click="editFood(food._id)" class="btn btn-warning">Edit</button></td>              
+        </tr>        
+    </table>
+
+    <a href="#admin" class="btn btn-info">Back to the Dashboard</a>
+
+</div>

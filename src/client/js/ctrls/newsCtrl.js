@@ -25,7 +25,6 @@
 		}
 
 		$scope.monthsSelected = [];
-		$scope.eventMessage = '';
 
 		$scope.monthChange = function(month){
 

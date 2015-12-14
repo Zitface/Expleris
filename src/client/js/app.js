@@ -56,15 +56,15 @@
 
             //Admin Routes
             .when("/admin", {
-                        templateUrl: "src/admin/views/admin.html",
+                        templateUrl: "src/admin/admin.html",
                         controller: "adminCtrl"
             })
                 .when("/adminBrands", {
-                            templateUrl: "src/admin/views/adminBrands.html",
+                            templateUrl: "src/admin/views/adminFood.html",
                             controller: "adminCtrl"
                 })
-                .when("/adminCategories", {
-                            templateUrl: "src/admin/views/adminCategories.html",
+                .when("/adminNonfood", {
+                            templateUrl: "src/admin/views/adminNonfood.html",
                             controller: "adminCtrl"
                 })
                 .when("/adminNews", {
