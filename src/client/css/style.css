@@ -37,17 +37,6 @@
     to   { opacity: 1; }
 }
 
-
-
-
-.lib {
-  font-family: Lib;
-}
-
-.openSans {
-  font-family: 'Open Sans';
-}
-
 /* COLORS: 
 
 Blues:
@@ -139,6 +128,13 @@ p {
 }
 
 /* CUSTOM CLASSES */
+.lib {
+  font-family: Lib;
+}
+
+.openSans {
+  font-family: 'Open Sans';
+}
 
 .padding0 {
   padding: 0;
